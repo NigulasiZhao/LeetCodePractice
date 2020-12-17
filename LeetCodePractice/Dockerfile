@@ -12,22 +12,22 @@ ENV ASPNETCORE_ENVIRONMENT=Release
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
 WORKDIR /src
-COPY ["GISWaterSupplyAndSewageServer/GISWaterSupplyAndSewageServer.csproj", "GISWaterSupplyAndSewageServer/"]
-COPY ["GISWaterSupplyAndSewageServer.CommonTools/GISWaterSupplyAndSewageServer.CommonTools.csproj", "GISWaterSupplyAndSewageServer.CommonTools/"]
-COPY ["GISWaterSupplyAndSewageServer.Model/GISWaterSupplyAndSewageServer.Model.csproj", "GISWaterSupplyAndSewageServer.Model/"]
-COPY ["GISWaterSupplyAndSewageServer.IDAL/GISWaterSupplyAndSewageServer.IDAL.csproj", "GISWaterSupplyAndSewageServer.IDAL/"]
-COPY ["GISWaterSupplyAndSewageServer.OracleDAL/GISWaterSupplyAndSewageServer.OracleDAL.csproj", "GISWaterSupplyAndSewageServer.OracleDAL/"]
-COPY ["GISWaterSupplyAndSewageServer.Database/GISWaterSupplyAndSewageServer.Database.csproj", "GISWaterSupplyAndSewageServer.Database/"]
-COPY ["GISWaterSupplyAndSewageServer.SQLServerDAL/GISWaterSupplyAndSewageServer.SQLServerDAL.csproj", "GISWaterSupplyAndSewageServer.SQLServerDAL/"]
-RUN dotnet restore "GISWaterSupplyAndSewageServer/GISWaterSupplyAndSewageServer.csproj"
+COPY ["LeetCodePractice/LeetCodePractice.csproj", "LeetCodePractice/"]
+COPY ["LeetCodePractice.CommonTools/LeetCodePractice.CommonTools.csproj", "LeetCodePractice.CommonTools/"]
+COPY ["LeetCodePractice.Model/LeetCodePractice.Model.csproj", "LeetCodePractice.Model/"]
+COPY ["LeetCodePractice.IDAL/LeetCodePractice.IDAL.csproj", "LeetCodePractice.IDAL/"]
+COPY ["LeetCodePractice.OracleDAL/LeetCodePractice.OracleDAL.csproj", "LeetCodePractice.OracleDAL/"]
+COPY ["LeetCodePractice.Database/LeetCodePractice.Database.csproj", "LeetCodePractice.Database/"]
+COPY ["LeetCodePractice.SQLServerDAL/LeetCodePractice.SQLServerDAL.csproj", "LeetCodePractice.SQLServerDAL/"]
+RUN dotnet restore "LeetCodePractice/LeetCodePractice.csproj"
 COPY . .
-WORKDIR "/src/GISWaterSupplyAndSewageServer"
-RUN dotnet build "GISWaterSupplyAndSewageServer.csproj" -c Release -o /app/build
+WORKDIR "/src/LeetCodePractice"
+RUN dotnet build "LeetCodePractice.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "GISWaterSupplyAndSewageServer.csproj" -c Release -o /app/publish
+RUN dotnet publish "LeetCodePractice.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "GISWaterSupplyAndSewageServer.dll"]
+ENTRYPOINT ["dotnet", "LeetCodePractice.dll"]

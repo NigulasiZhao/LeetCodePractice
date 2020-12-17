@@ -1,4 +1,4 @@
-﻿using GISWaterSupplyAndSewageServer.CommonTools;
+﻿using LeetCodePractice.CommonTools;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.Json;
 using Npgsql;
@@ -10,14 +10,14 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Text;
 
-namespace GISWaterSupplyAndSewageServer.Database
+namespace LeetCodePractice.Database
 {
     public class ConnectionFactory
     {
         private static IConfiguration _configuration;
         public enum DBConnNames
         {
-            GISWaterSupplyAndSewageServer,
+            LeetCodePractice,
             PipeInspection_Smart_Water,
             PipeInspectionBase_Gis_DB,
             PipeInspectionBase_Gis_OutSide,

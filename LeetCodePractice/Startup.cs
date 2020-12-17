@@ -4,8 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
-using GISWaterSupplyAndSewageServer.CommonTools;
-using GISWaterSupplyAndSewageServer.App_Start;
+using LeetCodePractice.CommonTools;
+using LeetCodePractice.App_Start;
 using Hangfire;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -21,7 +21,7 @@ using Newtonsoft.Json.Serialization;
 //using StackExchange.Redis;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
-namespace GISWaterSupplyAndSewageServer
+namespace LeetCodePractice
 {
     public class Startup
     {

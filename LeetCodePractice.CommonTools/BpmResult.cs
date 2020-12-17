@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GISWaterSupplyAndSewageServer.CommonTools
+namespace LeetCodePractice.CommonTools
 {
     public class BpmResult
     {

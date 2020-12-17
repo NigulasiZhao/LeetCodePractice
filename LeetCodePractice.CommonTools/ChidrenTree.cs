@@ -1,14 +1,11 @@
-﻿
-using GISWaterSupplyAndSewageServer.Model.EssentialFactor;
-using GISWaterSupplyAndSewageServer.Model.PlanningEngine.Plan;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GISWaterSupplyAndSewageServer.CommonTools
+namespace LeetCodePractice.CommonTools
 {
     public class ChidrenTree
     {
@@ -136,7 +133,7 @@ namespace GISWaterSupplyAndSewageServer.CommonTools
         //    }
         //    return list;
         //}
-        //private List<TreeChildViewModel> GetChildList(List<GISWaterSupplyAndSewageServer.Model.EssentialFactor.GIS_EssentialFactor> esslist, TreeChildViewModel treeChildView)
+        //private List<TreeChildViewModel> GetChildList(List<LeetCodePractice.Model.EssentialFactor.GIS_EssentialFactor> esslist, TreeChildViewModel treeChildView)
         //{
         //    if (!esslist.Exists(x => x.PID == treeChildView.ID))
         //    {

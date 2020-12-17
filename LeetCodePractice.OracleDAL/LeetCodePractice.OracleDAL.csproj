@@ -5,15 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="PlanningEngine\InspectionSettings\EventStartDAL.cs" />
-    <Compile Remove="PlanningEngine\InspectionSettings\Ins_EventDAL.cs" />
-    <Compile Remove="PlanningEngine\InspectionSettings\Ins_EventHistoryDAL.cs" />
-    <Compile Remove="PlanningEngine\InspectionSettings\Ins_Event_LeakDAL.cs" />
-    <Compile Remove="PlanningEngine\InspectionSettings\Ins_Event_TypeDAL.cs" />
-    <Compile Remove="PlanningEngine\InspectionSettings\Statistics\Ins_EventStatisticsDAL.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.3" />
     <PackageReference Include="ProjNet" Version="2.0.0" />
     <PackageReference Include="RabbitMQ.Client" Version="6.1.0" />

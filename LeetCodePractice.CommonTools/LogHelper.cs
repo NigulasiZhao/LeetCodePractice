@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace GISWaterSupplyAndSewageServer.CommonTools
+namespace LeetCodePractice.CommonTools
 {
     /// <summary>
     /// Log4Net Helper 2018-12-16 19:15:00  

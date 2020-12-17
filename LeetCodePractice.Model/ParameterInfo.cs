@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GISWaterSupplyAndSewageServer.Model
+namespace LeetCodePractice.Model
 {
     /// <summary>
     /// 参数数据类型

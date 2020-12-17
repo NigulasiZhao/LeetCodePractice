@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using GISWaterSupplyAndSewageServer.Model.BaseEntity;
 using System.Net.Http;
 using System.Net;
 using System.Text;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc.Filters;
-using GISWaterSupplyAndSewageServer.App_Authorize;
 using Microsoft.Extensions.Primitives;
 
-namespace GISWaterSupplyAndSewageServer.AttributePack
+namespace LeetCodePractice.AttributePack
 {
     //public class WebApiFilterAttribute : System.Web.Http.Filters.ActionFilterAttribute
     //{
@@ -40,22 +38,22 @@ namespace GISWaterSupplyAndSewageServer.AttributePack
     {
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-            RequestCheck requestCheck = new RequestCheck();
+            //RequestCheck requestCheck = new RequestCheck();
 
-            context.HttpContext.Request.Headers.TryGetValue("Token", out StringValues token);
-            requestCheck.RequestLoginStateCheck(token.First());
-            var loginState = requestCheck.RequestLoginStateCheck(StringValues.IsNullOrEmpty(token) ? "" : token.First());
+            //context.HttpContext.Request.Headers.TryGetValue("Token", out StringValues token);
+            //requestCheck.RequestLoginStateCheck(token.First());
+            //var loginState = requestCheck.RequestLoginStateCheck(StringValues.IsNullOrEmpty(token) ? "" : token.First());
 
-            if (ErrorType.Success == loginState)
-            {
-            }
-            else
-            {
-                //var response = context.HttpContext.get = context.HttpContext ?? new HttpResponseMessage();
-                //response.Content = new StringContent(JsonConvert.SerializeObject(MessageEntityTool.GetMessage(loginState)), Encoding.UTF8, "application/json");
-                //return;
+            //if (ErrorType.Success == loginState)
+            //{
+            //}
+            //else
+            //{
+            //    //var response = context.HttpContext.get = context.HttpContext ?? new HttpResponseMessage();
+            //    //response.Content = new StringContent(JsonConvert.SerializeObject(MessageEntityTool.GetMessage(loginState)), Encoding.UTF8, "application/json");
+            //    //return;
 
-            }
+            //}
         }
 
     }

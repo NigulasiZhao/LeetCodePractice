@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Security.Cryptography;
 
-namespace GISWaterSupplyAndSewageServer.CommonTools
+namespace LeetCodePractice.CommonTools
 {
     public static class Sha1Helper
     {

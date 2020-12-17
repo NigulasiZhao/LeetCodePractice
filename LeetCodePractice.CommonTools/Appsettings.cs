@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace GISWaterSupplyAndSewageServer.CommonTools
+namespace LeetCodePractice.CommonTools
 {
     /// <summary>
     /// appsettings.json操作类

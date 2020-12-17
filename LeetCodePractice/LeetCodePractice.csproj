@@ -20,13 +20,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Controllers\ApiControllers\PlanningEngine\InspectionSettings\InsEventContentController.cs" />
-    <Compile Remove="Controllers\ApiControllers\PlanningEngine\InspectionSettings\InsEventHistoryController.cs" />
-    <Compile Remove="Controllers\ApiControllers\PlanningEngine\InspectionSettings\InsEventLeakController.cs" />
-    <Compile Remove="Controllers\ApiControllers\PlanningEngine\InspectionSettings\InsEventStartController.cs" />
-    <Compile Remove="Controllers\ApiControllers\PlanningEngine\InspectionSettings\InsEventTypeController.cs" />
-    <Compile Remove="Controllers\ApiControllers\PlanningEngine\InspectionSettings\Ins_EventManageController.cs" />
-    <Compile Remove="Controllers\ApiControllers\PlanningEngine\InspectionSettings\Statistics\InsEventStatisticsController.cs" />
     <Compile Remove="Controllers\WeatherForecastController.cs" />
   </ItemGroup>
 

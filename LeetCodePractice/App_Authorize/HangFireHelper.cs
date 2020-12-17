@@ -1,13 +1,11 @@
-﻿using GISWaterSupplyAndSewageServer.CommonTools;
-using GISWaterSupplyAndSewageServer.IDAL.Plan;
-using GISWaterSupplyAndSewageServer.OracleDAL.Plan;
+﻿using LeetCodePractice.CommonTools;
 using Hangfire;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GISWaterSupplyAndSewageServer
+namespace LeetCodePractice
 {
     /// <summary>
     /// HangFire帮助类
@@ -38,25 +36,25 @@ namespace GISWaterSupplyAndSewageServer
         /// <returns></returns>
         public static void AutoTackDemo()
         {
-            try
-            {
-                IIns_Plan_CycleDAL dal = new Ins_Plan_CycleDAL();
-                ////数据库操作
-                //AutoPlanCyle Service = new AutoPlanCyle();
-                dal.Add(new GISWaterSupplyAndSewageServer.Model.Plan.Ins_Plan_Cycle
-                {
-                    Plan_Cycle_Name = DateTime.Now.ToString(),
-                    CycleTime = "1024",
-                    CycleUnit = "天",
-                    CycleHz = 1,
-                    DeleteState = 0
-                });
-            }
-            catch (Exception e)
-            {
+            //try
+            //{
+            //    IIns_Plan_CycleDAL dal = new Ins_Plan_CycleDAL();
+            //    ////数据库操作
+            //    //AutoPlanCyle Service = new AutoPlanCyle();
+            //    dal.Add(new LeetCodePractice.Model.Plan.Ins_Plan_Cycle
+            //    {
+            //        Plan_Cycle_Name = DateTime.Now.ToString(),
+            //        CycleTime = "1024",
+            //        CycleUnit = "天",
+            //        CycleHz = 1,
+            //        DeleteState = 0
+            //    });
+            //}
+            //catch (Exception e)
+            //{
 
-                LogHelper.Debug(e.Message);
-            }
+            //    LogHelper.Debug(e.Message);
+            //}
             //Redis操作
             //IDatabase _redis = new RedisHelper(Appsettings.app(new string[] { "Redis", "Default", "Connection" }), Appsettings.app(new string[] { "Redis", "Default", "InstanceName" }), int.Parse(Appsettings.app(new string[] { "Redis", "Default", "DefaultDB" }))).GetDatabase();
             //_redis.StringSet(DateTime.Now.ToString(), "1");

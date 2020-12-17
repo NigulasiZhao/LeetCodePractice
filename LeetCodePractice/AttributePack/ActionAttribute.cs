@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace GISWaterSupplyAndSewageServer.AttributePack
+namespace LeetCodePractice.AttributePack
 {
     [AttributeUsage(AttributeTargets.Method, Inherited = true)]
     public class ActionAttribute: Attribute

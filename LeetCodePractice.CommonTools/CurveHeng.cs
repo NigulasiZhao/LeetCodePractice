@@ -8,7 +8,7 @@ using System.Drawing.Drawing2D;
 using System.Data;
 
 
-namespace GISWaterSupplyAndSewageServer.CommonTools
+namespace LeetCodePractice.CommonTools
 {
     public class CurveHeng
     {
