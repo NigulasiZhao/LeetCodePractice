@@ -1,0 +1,507 @@
+[
+  {
+    "Name": "原水设施_排水阀",
+    "ClassName": "YSSS_DVALVE",
+    "Fields": {
+      "LANE_WAY": "所在道路",
+      "MANAGEDEPT": "管理单位",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "LANE_WAY", "MANAGEDEPT" ],
+    "Tags": {
+      "MANAGEDEPT": "管理单位"
+    }
+
+  },
+  {
+    "Name": "原水设施_排气阀",
+    "ClassName": "YSSS_EVALVE",
+    "Fields": {
+      "LANE_WAY": "所在道路",
+      "MANAGEDEPT": "管理单位",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "LANE_WAY", "MANAGEDEPT" ],
+    "Tags": {
+      "MANAGEDEPT": "管理单位"
+    }
+  },
+  {
+    "Name": "原水设施_阀门",
+    "ClassName": "YSSS_VALVE",
+    "Fields": {
+      "SUBTYPE": "供水类型",
+      "MODEL": "型号",
+      "MANUFACTURER": "生产厂家",
+      "ONOFF_STATS": "开关状态",
+      "LANE_WAY": "所在道路",
+      "CONSTRUCTER": "施工单位",
+      "MANAGEDEPT": "管理单位",
+      "GNAME": "片区名称",
+      "D_S": "口径",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "SUBTYPE", "MODEL", "MANUFACTURER", "ONOFF_STATS", "LANE_WAY", "CONSTRUCTER", "MANAGEDEPT", "GNAME", "D_S" ],
+    "Tags": {
+      "D_S": "口径",
+      "CONSTRUCTER": "施工单位"
+    }
+  },
+  {
+    "Name": "原水管线_普通管线",
+    "ClassName": "YSGX_ORDINLN",
+    "Fields": {
+      "SUBTYPE": "供水类型",
+      "LANE_WAY": "所在道路",
+      "CONSTRUCTER": "施工单位",
+      "GNAME": "片区名称",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "SUBTYPE", "CONSTRUCTER", "GNAME" ],
+    "Tags": {
+      "CONSTRUCTER": "施工单位"
+    }
+  },
+  {
+    "Name": "原水管线_原水明渠",
+    "ClassName": "YSGX_CHANNEL",
+    "Fields": {
+      "LANE_WAY": "所在道路",
+      "CONSTRUCTER": "施工单位",
+      "GNAME": "片区名称",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "LANE_WAY", "CONSTRUCTER", "GNAME" ],
+    "Tags": {
+      "CONSTRUCTER": "施工单位"
+    }
+  },
+  {
+    "Name": "原水管线_规划管线",
+    "ClassName": "YSGX_PLANNLN",
+    "Fields": {
+      "LANE_WAY": "所在道路",
+      "CONSTRUCTER": "施工单位",
+      "GNAME": "片区名称",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "LANE_WAY", "CONSTRUCTER", "GNAME" ],
+    "Tags": {
+      "CONSTRUCTER": "施工单位"
+    }
+  },
+  {
+    "Name": "供水水厂_水厂",
+    "ClassName": "GSSC_WFACTORY",
+    "Fields": {
+      "FNAME": "水厂名称",
+      "DISTRICT": "行政区",
+      "MANAGEDEPT": "管理单位",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "FNAME", "DISTRICT", "MANAGEDEPT" ],
+    "Tags": {
+      "FNAME": "水厂名称"
+    }
+  },
+  {
+    "Name": "加压泵站_泵站",
+    "ClassName": "GSBZ_PUMPSTATON",
+    "Fields": {
+      "NAME": "名称",
+      "WORK_STATS": "运行状态",
+      "LANE_WAY": "所在道路",
+      "GNAME": "片区名称",
+      "MANAGEDEPT": "管理单位",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "NAME", "WORK_STATS", "LANE_WAY", "GNAME", "MANAGEDEPT" ],
+    "Tags": {
+      "WORK_STATS": "运行状态"
+    }
+  },
+  {
+    "Name": "供水设施_排水阀",
+    "ClassName": "GSSS_DVALVE",
+    "Fields": {
+      "MANUFACTURER": "生产厂家",
+      "WORK_STATS": "运行状态",
+      "CONSTRUCTER": "施工单位",
+      "LANE_WAY": "所在道路",
+      "MANAGEDEPT": "管理单位",
+      "GNAME": "片区名称",
+      "D_S": "口径",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "MANUFACTURER", "WORK_STATS", "CONSTRUCTER", "LANE_WAY", "MANAGEDEPT", "GNAME", "D_S" ],
+    "Tags": {
+      "D_S": "口径",
+      "WORK_STATS": "运行状态"
+
+    }
+  },
+  {
+    "Name": "供水设施_水表",
+    "ClassName": "GSSS_WMETER",
+    "Fields": {
+      "PRJID": "工程编号",
+      "CONSTRUCTER": "施工单位",
+      "LANE_WAY": "所在道路",
+      "MANAGEDEPT": "管理单位",
+      "GNAME": "片区名称",
+      "D_S": "口径",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "PRJID", "CONSTRUCTER", "LANE_WAY", "LANE_WAY", "MANAGEDEPT", "GNAME", "D_S" ],
+    "Tags": {
+      "D_S": "口径",
+      "CONSTRUCTER": "施工单位"
+
+    }
+  },
+  {
+    "Name": "供水设施_水质点",
+    "ClassName": "GSSS_WQUALIPT",
+    "Fields": {
+      "CONSTRUCTER": "施工单位",
+      "LANE_WAY": "所在道路",
+      "GNAME": "片区名称",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "CONSTRUCTER", "LANE_WAY", "GNAME" ],
+    "Tags": {
+      "CONSTRUCTER": "施工单位"
+    }
+  },
+  {
+    "Name": "供水设施_储水设备",
+    "ClassName": "GSSS_STOREWAT",
+    "Fields": {
+      "LANE_WAY": "所在道路",
+      "GNAME": "片区名称",
+      "MANAGEDEPT": "管理单位",
+      "REMARK": "备注",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "MANAGEDEPT", "LANE_WAY", "GNAME", "REMARK" ],
+    "Tags": {
+      "MANAGEDEPT": "管理单位"
+    }
+  },
+  {
+    "Name": "供水设施_排气阀",
+    "ClassName": "GSSS_EVALVE",
+    "Fields": {
+      "CONSTRUCTER": "施工单位",
+      "LANE_WAY": "所在道路",
+      "GNAME": "片区名称",
+      "MANAGEDEPT": "管理单位",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "CONSTRUCTER", "LANE_WAY", "GNAME", "MANAGEDEPT" ],
+    "Tags": {
+      "CONSTRUCTER": "施工单位"
+    }
+  },
+  {
+    "Name": "供水设施_消防栓",
+    "ClassName": "GSSS_FIREPLUG",
+    "Fields": {
+      "LANE_WAY": "所在道路",
+      "REMARK": "备注",
+      "GNAME": "片区名称",
+      "D_S": "口径",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "LANE_WAY", "REMARK", "GNAME", "D_S" ],
+    "Tags": {
+      "D_S": "口径"
+    }
+  },
+  {
+    "Name": "供水设施_市政消防栓",
+    "ClassName": "GSSS_FIREPLUG_SZ",
+    "Fields": {
+      "MANUFACTURER": "生产厂家",
+      "CONSTRUCTER": "施工单位",
+      "LANE_WAY": "所在道路",
+      "MANAGEDEPT": "管理单位",
+      "GNAME": "片区名称",
+      "D_S": "口径",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "MANUFACTURER", "CONSTRUCTER", "LANE_WAY", "MANAGEDEPT", "GNAME", "D_S" ],
+    "Tags": {
+      "D_S": "口径",
+      "CONSTRUCTER": "施工单位"
+    }
+  },
+  {
+    "Name": "供水设施_参考消防栓",
+    "ClassName": "GSSS_FIREPLUG_CK",
+    "Fields": {
+      "MANUFACTURER": "生产厂家",
+      "CONSTRUCTER": "施工单位",
+      "LANE_WAY": "所在道路",
+      "MANAGEDEPT": "管理单位",
+      "GNAME": "片区名称",
+      "D_S": "口径",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "MANUFACTURER", "CONSTRUCTER", "LANE_WAY", "MANAGEDEPT", "GNAME", "D_S" ],
+    "Tags": {
+      "D_S": "口径",
+      "CONSTRUCTER": "施工单位"
+    }
+  },
+  {
+    "Name": "供水设施_测流阀",
+    "ClassName": "GSSS_LVALVE",
+    "Fields": {
+      "CONSTRUCTER": "施工单位",
+      "LANE_WAY": "所在道路",
+      "MANAGEDEPT": "管理单位",
+      "GNAME": "片区名称",
+      "D_S": "口径",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "CONSTRUCTER", "LANE_WAY", "MANAGEDEPT", "GNAME", "D_S" ],
+    "Tags": {
+      "D_S": "口径",
+      "CONSTRUCTER": "施工单位"
+    }
+  },
+  {
+    "Name": "供水设施_流量计",
+    "ClassName": "GSSS_FLOWMETER",
+    "Fields": {
+      "CONSTRUCTER": "施工单位",
+      "NAME": "名称",
+      "LANE_WAY": "所在道路",
+      "D_S": "口径",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "CONSTRUCTER", "LANE_WAY", "NAME", "D_S" ],
+    "Tags": {
+      "D_S": "口径",
+      "CONSTRUCTER": "施工单位"
+    }
+  },
+  {
+    "Name": "供水设施_泵房",
+    "ClassName": "GSSS_PUMPHOUSE",
+    "Fields": {
+      "CONSTRUCTER": "施工单位",
+      "LANE_WAY": "所在道路",
+      "GNAME": "片区名称",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "CONSTRUCTER", "LANE_WAY", "GNAME" ],
+    "Tags": {
+      "CONSTRUCTER": "施工单位"
+    }
+  },
+  {
+    "Name": "供水设施_变径管",
+    "ClassName": "GSSS_REDUC",
+    "Fields": {
+      "D_S1": "口径1",
+      "D_S2": "口径2",
+      "LANE_WAY": "所在道路",
+      "GNAME": "片区名称",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "D_S1", "D_S2", "LANE_WAY", "GNAME" ],
+    "Tags": {
+      "D_S1": "口径1",
+      "D_S2": "口径2"
+    }
+  },
+  {
+    "Name": "供水设施_堵头封板",
+    "ClassName": "GSSS_STEM",
+    "Fields": {
+      "D_S": "口径",
+      "LANE_WAY": "所在道路",
+      "GNAME": "片区名称",
+      "CONSTRUCTER": "施工单位",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "D_S", "LANE_WAY", "GNAME", "CONSTRUCTER" ],
+    "Tags": {
+      "D_S": "口径"
+    }
+  },
+  {
+    "Name": "供水设施_止水栓",
+    "ClassName": "GSSS_STOPCOCK",
+    "Fields": {
+      "D_S": "口径",
+      "ONOFF_STATS": "开关状态",
+      "LANE_WAY": "所在道路",
+      "CONSTRUCTER": "施工单位",
+      "GNAME": "片区名称",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "D_S", "ONOFF_STATS", "LANE_WAY", "GNAME", "CONSTRUCTER" ],
+    "Tags": {
+      "D_S": "口径",
+      "ONOFF_STATS": "开关状态"
+    }
+  },
+  {
+    "Name": "供水管线_高质管线",
+    "ClassName": "GSGX_QUALILN",
+    "Fields": {
+      "D_S": "口径",
+      "MATERIAL": "材质",
+      "CONSTRUCTER": "施工单位",
+      "LANE_WAY": "所在道路",
+      "MANAGEDEPT": "管理单位",
+      "FINISH_DATE": "竣工日期",
+      "GNAME": "片区名称",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "D_S", "MATERIAL", "MANAGEDEPT", "LANE_WAY", "GNAME", "FINISH_DATE", "GNAME", "CONSTRUCTER" ],
+    "Tags": {
+      "D_S": "口径",
+      "MATERIAL": "材质"
+    }
+  },
+  {
+    "Name": "供水管线_表后管线",
+    "ClassName": "GSGX_BACTNLN",
+    "Fields": {
+      "D_S": "口径",
+      "MATERIAL": "材质",
+      "CONSTRUCTER": "施工单位",
+      "LANE_WAY": "所在道路",
+      "MANAGEDEPT": "管理单位",
+      "FINISH_DATE": "竣工日期",
+      "GNAME": "片区名称",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "D_S", "MATERIAL", "CONSTRUCTER", "LANE_WAY", "MANAGEDEPT", "FINISH_DATE", "GNAME" ],
+    "Tags": {
+      "D_S": "口径",
+      "MATERIAL": "材质"
+    }
+  },
+  {
+    "Name": "供水管线_小区管线",
+    "ClassName": "GSGX_COMTNLN",
+    "Fields": {
+      "D_S": "口径",
+      "MATERIAL": "材质",
+      "CONSTRUCTER": "施工单位",
+      "LANE_WAY": "所在道路",
+      "MANAGEDEPT": "管理单位",
+      "FINISH_DATE": "竣工日期",
+      "GNAME": "片区名称",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "D_S", "MATERIAL", "CONSTRUCTER", "LANE_WAY", "MANAGEDEPT", "FINISH_DATE", "GNAME" ],
+    "Tags": {
+      "D_S": "口径",
+      "MATERIAL": "材质"
+    }
+  },
+  {
+    "Name": "供水管线_分质管线",
+    "ClassName": "GSGX_DIFQTNLN",
+    "Fields": {
+      "D_S": "口径",
+      "MATERIAL": "材质",
+      "CONSTRUCTER": "施工单位",
+      "LANE_WAY": "所在道路",
+      "MANAGEDEPT": "管理单位",
+      "FINISH_DATE": "竣工日期",
+      "GNAME": "片区名称",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "D_S", "MATERIAL", "CONSTRUCTER", "LANE_WAY", "MANAGEDEPT", "FINISH_DATE", "GNAME" ],
+    "Tags": {
+      "D_S": "口径",
+      "MATERIAL": "材质"
+    }
+  },
+  {
+    "Name": "供水管线_加压管线",
+    "ClassName": "GSGX_PRESSTNLN",
+    "Fields": {
+      "D_S": "口径",
+      "MATERIAL": "材质",
+      "CONSTRUCTER": "施工单位",
+      "LANE_WAY": "所在道路",
+      "MANAGEDEPT": "管理单位",
+      "FINISH_DATE": "竣工日期",
+      "GNAME": "片区名称",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "D_S", "MATERIAL", "CONSTRUCTER", "LANE_WAY", "MANAGEDEPT", "FINISH_DATE", "GNAME" ],
+    "Tags": {
+      "D_S": "口径",
+      "MATERIAL": "材质"
+    }
+  },
+  {
+    "Name": "供水设施_阀门",
+    "ClassName": "GSSS_VALVE",
+    "Fields": {
+      "D_S": "口径",
+      "LANE_WAY": "所在道路",
+      "CONSTRUCTER": "施工单位",
+      "GNAME": "片区名称",
+      "FINISH_DATE": "竣工日期",
+      "ONOFF_STATS": "开关状态",
+      "WORK_STATS": "运行状态",
+      "SUBTYPE": "供水类型",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "D_S", "LANE_WAY", "CONSTRUCTER", "GNAME", "FINISH_DATE", "ONOFF_STATS", "WORK_STATS", "SUBTYPE" ],
+    "Tags": {
+      "D_S": "口径",
+      "ONOFF_STATS": "开关状态"
+    }
+  },
+  {
+    "Name": "供水管线_普通管线",
+    "ClassName": "GSGX_ORDINLN",
+    "Fields": {
+      "D_S": "口径",
+      "MATERIAL": "材质",
+      "CONSTRUCTER": "施工单位",
+      "LANE_WAY": "所在道路",
+      "MANAGEDEPT": "管理单位",
+      "FINISH_DATE": "竣工日期",
+      "GNAME": "片区名称",
+      "GLOBALID": "全局Id"
+    },
+    "Parameters": [ "D_S", "MATERIAL", "CONSTRUCTER", "LANE_WAY", "MANAGEDEPT", "FINISH_DATE", "GNAME" ],
+    "Tags": {
+      "D_S": "口径",
+      "MATERIAL": "材质"
+    }
+  },
+  {
+    "Name": "用户",
+    "ClassName": "GYS_USER3",
+    "Fields": {
+      "OCODE": "编号",
+      "OTITLE": "名称",
+      "TMP_YC_ADDRESS": "地址",
+      "COMMUNITYNAME": "小区",
+      "BUILDINGNAME": "楼宇",
+      "M_CODE": "表钢印",
+      "TMP_YC_METERID": "表编号"
+    },
+    "Parameters": [ "OTITLE", "TMP_YC_ADDRESS", "COMMUNITYNAME" ],
+    "Tags": {
+      "OCODE": "编号",
+      "OTITLE": "名称",
+      "COMMUNITYNAME": "小区",
+      "BUILDINGNAME": "楼宇",
+      "M_CODE": "表钢印"
+    }
+  }
+]

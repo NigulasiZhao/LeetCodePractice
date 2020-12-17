@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="PlanningEngine\InspectionSettings\IIns_EventDAL.cs" />
+    <Compile Remove="PlanningEngine\InspectionSettings\IIns_EventHistoryDAL.cs" />
+    <Compile Remove="PlanningEngine\InspectionSettings\IIns_Event_LeakDAL.cs" />
+    <Compile Remove="PlanningEngine\InspectionSettings\IIns_Event_TypeDAL.cs" />
+    <Compile Remove="PlanningEngine\InspectionSettings\Statistics\IIns_EventStatisticsDAL.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LeetCodePractice.Model\LeetCodePractice.Model.csproj" />
+  </ItemGroup>
+
+</Project>

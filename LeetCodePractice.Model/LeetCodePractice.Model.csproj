@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="PlanningEngine\InspectionSettings\Ins_Event.cs" />
+    <Compile Remove="PlanningEngine\InspectionSettings\Ins_EventFrom.cs" />
+    <Compile Remove="PlanningEngine\InspectionSettings\Ins_EventList.cs" />
+    <Compile Remove="PlanningEngine\InspectionSettings\Ins_Event_Leak.cs" />
+    <Compile Remove="PlanningEngine\InspectionSettings\INS_Event_Type.cs" />
+    <Compile Remove="PlanningEngine\InspectionSettings\Ins_WorkOrder_Oper_History.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DapperExtensions.DotnetCore" Version="1.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>

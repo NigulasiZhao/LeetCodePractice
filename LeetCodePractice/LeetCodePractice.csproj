@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>LeetCodePractice</RootNamespace>
+    <OutputType>WinExe</OutputType>
+    <UserSecretsId>8c86daba-b096-400b-b4ce-e6aefcff5a83</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>GISServerForCore2.0.xml</DocumentationFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>GISServerForCore2.0.xml</DocumentationFile>
+    <OutputPath>bin\Release\netcoreapp3.1</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\ApiControllers\PlanningEngine\InspectionSettings\InsEventContentController.cs" />
+    <Compile Remove="Controllers\ApiControllers\PlanningEngine\InspectionSettings\InsEventHistoryController.cs" />
+    <Compile Remove="Controllers\ApiControllers\PlanningEngine\InspectionSettings\InsEventLeakController.cs" />
+    <Compile Remove="Controllers\ApiControllers\PlanningEngine\InspectionSettings\InsEventStartController.cs" />
+    <Compile Remove="Controllers\ApiControllers\PlanningEngine\InspectionSettings\InsEventTypeController.cs" />
+    <Compile Remove="Controllers\ApiControllers\PlanningEngine\InspectionSettings\Ins_EventManageController.cs" />
+    <Compile Remove="Controllers\ApiControllers\PlanningEngine\InspectionSettings\Statistics\InsEventStatisticsController.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.12" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.12" />
+    <PackageReference Include="Hangfire.Redis.StackExchange" Version="1.8.4" />
+    <PackageReference Include="JWT" Version="6.1.4" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="3.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="Nancy" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="StackExchange.Redis" Version="2.1.58" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.3.1" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LeetCodePractice.CommonTools\LeetCodePractice.CommonTools.csproj" />
+    <ProjectReference Include="..\LeetCodePractice.IDAL\LeetCodePractice.IDAL.csproj" />
+    <ProjectReference Include="..\LeetCodePractice.Model\LeetCodePractice.Model.csproj" />
+    <ProjectReference Include="..\LeetCodePractice.OracleDAL\LeetCodePractice.OracleDAL.csproj" />
+    <ProjectReference Include="..\LeetCodePractice.SQLServerDAL\LeetCodePractice.SQLServerDAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GISServerForCore2.0.xml" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="App_Start\" />
+  </ItemGroup>
+
+
+</Project>
+
+ 

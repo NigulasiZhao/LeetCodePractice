@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper.Oracle" Version="1.2.1" />
+    <PackageReference Include="DapperExtensions.DotnetCore" Version="1.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.3" />
+    <PackageReference Include="Npgsql" Version="4.1.3.1" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="2.19.60" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LeetCodePractice.CommonTools\LeetCodePractice.CommonTools.csproj" />
+    <ProjectReference Include="..\LeetCodePractice.Model\LeetCodePractice.Model.csproj" />
+  </ItemGroup>
+
+</Project>

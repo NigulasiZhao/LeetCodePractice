@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LeetCodePractice.CommonTools\LeetCodePractice.CommonTools.csproj" />
+    <ProjectReference Include="..\LeetCodePractice.Database\LeetCodePractice.Database.csproj" />
+    <ProjectReference Include="..\LeetCodePractice.IDAL\LeetCodePractice.IDAL.csproj" />
+    <ProjectReference Include="..\LeetCodePractice.Model\LeetCodePractice.Model.csproj" />
+  </ItemGroup>
+
+</Project>

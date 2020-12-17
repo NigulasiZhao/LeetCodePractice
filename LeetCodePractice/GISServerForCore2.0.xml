@@ -1,0 +1,3051 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LeetCodePractice</name>
+    </assembly>
+    <members>
+        <member name="T:GISWaterSupplyAndSewageServer.HangFireHelper">
+            <summary>
+            HangFire帮助类
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.HangFireHelper.StartHangFireTask">
+            <summary>
+            开始HangFire后台任务
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.HangFireHelper.AutomaticSignOutTask">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.HangFireHelper.AutoTackDemo">
+            <summary>
+            自动任务Demo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.App_Authorize.JwtHelper.SetJwtEncode(System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            生成JwtToken
+            </summary>
+            <param name="payload">不敏感的用户数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.App_Authorize.JwtHelper.GetJwtDecode(System.String)">
+            <summary>
+            根据jwtToken  获取实体
+            </summary>
+            <param name="token">jwtToken</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_leakdetectionController">
+            <summary>
+            捡漏台账
+            </summary>  
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_leakdetectionController.#ctor(GISWaterSupplyAndSewageServer.IDAL.Accounts.IAccounts_leakdetection)">
+            <summary>
+            捡漏台账
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_leakdetectionController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取捡漏台账
+            </summary>
+            <param name="ParInfo">捡漏台账查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_leakdetectionController.GetStatistics(System.String,System.String,System.String)">
+            <summary>
+            根据统计字段，条件等信息进行数据统计
+            </summary>
+            <param name="parInfo">where条件</param>
+            <param name="fieldsInfo">分组字段列表</param>
+            <param name="fieldsCount">统计字段</param>
+            <returns>统计结果</returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_leakdetectionController.Post(GISWaterSupplyAndSewageServer.Model.Accounts.Gis_Accounts_leakdetection)">
+            <summary>
+            新增
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_leakdetectionController.Put(System.String,GISWaterSupplyAndSewageServer.Model.Accounts.Gis_Accounts_leakdetection)">
+            <summary>
+            修改
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_leakdetectionController.Delete(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_MaintenanceController">
+            <summary>
+            养护台账
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_MaintenanceController.#ctor(GISWaterSupplyAndSewageServer.IDAL.Accounts.IAccounts_Maintenance)">
+            <summary>
+            养护台账
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_MaintenanceController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取养护台账
+            </summary>
+            <param name="ParInfo">养护台账查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_MaintenanceController.GetStatistics(System.String,System.String,System.String)">
+            <summary>
+            根据统计字段，条件等信息进行数据统计
+            </summary>
+            <param name="parInfo">where条件</param>
+            <param name="fieldsInfo">分组字段列表</param>
+            <param name="fieldsCount">统计字段</param>
+            <returns>统计结果</returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_MaintenanceController.Post(GISWaterSupplyAndSewageServer.Model.Accounts.Gis_Accounts_Maintenance)">
+            <summary>
+            新增
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_MaintenanceController.Put(System.String,GISWaterSupplyAndSewageServer.Model.Accounts.Gis_Accounts_Maintenance)">
+            <summary>
+            修改
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_MaintenanceController.Delete(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_RepairController">
+            <summary>
+            维修台账
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_RepairController.#ctor(GISWaterSupplyAndSewageServer.IDAL.Accounts.IAccounts_Repair)">
+            <summary>
+            维修台账
+            </summary>
+            <param name="repairDAL"></param>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_RepairController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取维修台账
+            </summary>
+            <param name="ParInfo">维修台账查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_RepairController.GetStatistics(System.String,System.String,System.String)">
+            <summary>
+            根据统计字段，条件等信息进行数据统计
+            </summary>
+            <param name="parInfo">where条件</param>
+            <param name="fieldsInfo">分组字段列表</param>
+            <param name="fieldsCount">统计字段</param>
+            <returns>统计结果</returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_RepairController.Post(GISWaterSupplyAndSewageServer.Model.Accounts.Gis_Accounts_Repair)">
+            <summary>
+            新增
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_RepairController.Put(System.String,GISWaterSupplyAndSewageServer.Model.Accounts.Gis_Accounts_Repair)">
+            <summary>
+            修改
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_RepairController.Delete(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_RinseController">
+            <summary>
+            维修台账
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_RinseController.#ctor(GISWaterSupplyAndSewageServer.IDAL.Accounts.IAccounts_Rinse)">
+            <summary>
+            冲洗台账
+            </summary>
+            <param name="rinseDAL"></param>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_RinseController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取冲洗台账
+            </summary>
+            <param name="ParInfo">冲洗台账查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort">排序字段</param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_RinseController.GetStatistics(System.String,System.String,System.String)">
+            <summary>
+            根据统计字段，条件等信息进行数据统计
+            </summary>
+            <param name="parInfo">where条件</param>
+            <param name="fieldsInfo">分组字段列表</param>
+            <param name="fieldsCount">统计字段</param>
+            <returns>统计结果</returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_RinseController.Post(GISWaterSupplyAndSewageServer.Model.Accounts.Gis_Accounts_Rinse)">
+            <summary>
+            新增
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_RinseController.Put(System.String,GISWaterSupplyAndSewageServer.Model.Accounts.Gis_Accounts_Rinse)">
+            <summary>
+            修改
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Accounts_RinseController.Delete(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Account_OthersController">
+            <summary>
+            维修台账
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Account_OthersController.#ctor(GISWaterSupplyAndSewageServer.IDAL.Accounts.IAccount_Others)">
+            <summary>
+            其他台账
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Account_OthersController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取其他台账
+            </summary>
+            <param name="ParInfo">其他台账查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Account_OthersController.GetStatistics(System.String,System.String,System.String)">
+            <summary>
+            根据统计字段，条件等信息进行数据统计
+            </summary>
+            <param name="parInfo">where条件</param>
+            <param name="fieldsInfo">分组字段列表</param>
+            <param name="fieldsCount">统计字段</param>
+            <returns>统计结果</returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Account_OthersController.Post(GISWaterSupplyAndSewageServer.Model.Accounts.Gis_Account_Others)">
+            <summary>
+            新增
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Account_OthersController.Put(System.String,GISWaterSupplyAndSewageServer.Model.Accounts.Gis_Account_Others)">
+            <summary>
+            修改
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Account_OthersController.Delete(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Account_ValveController">
+            <summary>
+            阀门台账
+            </summary>   
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Account_ValveController.#ctor(GISWaterSupplyAndSewageServer.IDAL.Accounts.IAccount_Valve)">
+            <summary>
+            阀门台账
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Account_ValveController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取阀门台账
+            </summary>
+            <param name="ParInfo">阀门台账对象列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Account_ValveController.GetStatistics(System.String,System.String,System.String)">
+            <summary>
+            根据统计字段，条件等信息进行数据统计
+            </summary>
+            <param name="parInfo">where条件</param>
+            <param name="fieldsInfo">分组字段列表</param>
+            <param name="fieldsCount">统计字段</param>
+            <returns>统计结果</returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Account_ValveController.Post(GISWaterSupplyAndSewageServer.Model.Accounts.Gis_Account_Valve)">
+            <summary>
+            新增
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Account_ValveController.Put(System.String,GISWaterSupplyAndSewageServer.Model.Accounts.Gis_Account_Valve)">
+            <summary>
+            修改
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Accounts.Account_ValveController.Delete(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Common.UpLoadFileController">
+            <summary>
+            上传文件
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Common.UpLoadFileController.UpLoad(System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile})">
+            <summary>
+            上传文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController">
+            <summary>
+             坐标转换
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController.GetBd09togcj02(System.Double,System.Double)">
+            <summary>
+            百度坐标系 (BD-09) 与 火星坐标系 (GCJ-02)的转换
+            即 百度 转 谷歌、高德
+            </summary>
+            <param name="lng">经度</param>
+            <param name="lat">纬度</param>
+            <returns>转换后坐标</returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController.Bd09togcj02List(GISWaterSupplyAndSewageServer.Model.Common.CoordinateModel)">
+            <summary>
+            批量坐标转换  (BD-09) 与 火星坐标系 (GCJ-02)的转换
+            即 百度 转 谷歌、高德
+            </summary>
+            <param name="listCoordinate"> 坐标数组集合 例如：[[123.11,2.22],[124.11,4.22],[125.11,5.22]]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController.GetGcj02tobd09(System.Double,System.Double)">
+            <summary>
+            火星坐标系 (GCJ-02) 与百度坐标系 (BD-09) 的转换
+            即谷歌、高德 转 百度
+            </summary>
+            <param name="lng">经度</param>
+            <param name="lat">纬度</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController.Gcj02tobd09List(GISWaterSupplyAndSewageServer.Model.Common.CoordinateModel)">
+            <summary>
+            批量火星坐标系 (GCJ-02)与(BD-09)坐标转换
+            即谷歌、高德 转 百度
+            </summary>
+            <param name="listCoordinate"> 坐标数组集合 例如：[[123.11,2.22],[124.11,4.22],[125.11,5.22]]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController.Wgs84togcj02(System.Double,System.Double)">
+            <summary>
+             WGS84转GCj02
+            </summary>
+            <param name="lng">经度</param>
+            <param name="lat">纬度</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController.Wgs84togcj02List(GISWaterSupplyAndSewageServer.Model.Common.CoordinateModel)">
+            <summary>
+            批量 WGS84 转换 GCJ02
+            </summary>
+            <param name="listCoordinate">坐标数组集合 例如：[[123.11,2.22],[124.11,4.22],[125.11,5.22]]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController.Gcj02towgs84(System.Double,System.Double)">
+            <summary>
+            GCJ02 转换为 WGS84
+            </summary>
+            <param name="lng">经度</param>
+            <param name="lat">纬度</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController.Gcj02towgs84List(GISWaterSupplyAndSewageServer.Model.Common.CoordinateModel)">
+            <summary>
+            批量GCJ经纬度 转WGS纬度
+            </summary>
+            <param name="listCoordinate"> 坐标数组集合 例如：[[123.11,2.22],[124.11,4.22],[125.11,5.22]]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController.S2000ToWGS84List(GISWaterSupplyAndSewageServer.Model.Common.CoordinateModel)">
+            <summary>
+            批量转换2000地理坐标转换为WGS84地理坐标系
+            </summary>
+            <param name="listCoordinate">源 例如：[[123.11,2.22],[124.11,4.22],[125.11,5.22]]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController.S2000ToWGS84(System.String)">
+            <summary>
+            2000地理坐标转换为WGS84地理坐标系
+            </summary>
+            <param name="pts">源 例如：[[123.11,2.22]] </param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController.WGS84ToS2000List(GISWaterSupplyAndSewageServer.Model.Common.CoordinateModel)">
+            <summary>
+            批量转换WGS84地理坐标转换为2000地理坐标系
+            </summary>
+            <param name="listCoordinate">源 例如：[[123.11,2.22],[124.11,4.22],[125.11,5.22]]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController.WGS84ToS2000(System.String)">
+            <summary>
+            WGS84地理坐标转换为2000地理坐标系
+            </summary>
+            <param name="pts">源 例如：[[123.11,2.22]]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController.GCJ02ToS2000List(GISWaterSupplyAndSewageServer.Model.Common.CoordinateModel)">
+            <summary>
+            批量GCJ-02 转 2000地理坐标系
+            </summary>
+            <param name="listCoordinate">源 例如：[[123.11,2.22],[124.11,4.22],[125.11,5.22]]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController.GCJ02ToS2000(System.String)">
+            <summary>
+            GCJ-02 转 2000地理坐标系
+            </summary>
+            <param name="pts">源 例如：[[123.11,2.22]]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController.S2000ToGCJ02List(GISWaterSupplyAndSewageServer.Model.Common.CoordinateModel)">
+            <summary>
+            批量2000地理坐标系 转 GCJ-02
+            </summary>
+            <param name="listCoordinate">源 例如：[[123.11,2.22],[124.11,4.22],[125.11,5.22]]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CoordinateTransf.CoordinateTransController.S2000ToGCJ02(System.String)">
+            <summary>
+            2000地理坐标系转 GCJ-02
+            </summary>
+            <param name="pts">源 例如：[[123.11,2.22]]</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyByMappingController">
+            <summary>
+            获取所有设备的下拉框内容信息
+            </summary> 
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyByMappingController.Get">
+            <summary>
+            获取所有设备的下拉框内容信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyController">
+            <summary>
+            设备属性
+            </summary> 
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取设备属性列表
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyController.Post(GISWaterSupplyAndSewageServer.Model.Equipments.EquipmentPorperty)">
+            <summary>
+            新增设备属性配置
+            </summary>
+            <param name="value"></param>````````````````````````
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyController.Put(System.String,GISWaterSupplyAndSewageServer.Model.Equipments.EquipmentPorperty)">
+            <summary>
+            修改设备属性配置
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyController.Delete(System.String)">
+            <summary>
+            删除设备属性配置
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyMappingController">
+            <summary>
+            点位/管线对应表操作
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyMappingController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取点位/管线对应表列表
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyMappingController.Post(GISWaterSupplyAndSewageServer.Model.Equipments.EquipmentPorpertyMapping)">
+            <summary>
+            新增 点位/管线
+            </summary>
+            <param name="value"></param>````````````````````````
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyMappingController.Put(System.String,GISWaterSupplyAndSewageServer.Model.Equipments.EquipmentPorpertyMapping)">
+            <summary>
+            修改 点位/管线
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyMappingController.Delete(System.String)">
+            <summary>
+            删除 点位/管线
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyValueController">
+            <summary>
+            设备属性的下拉列表的值
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyValueController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取设备属性下拉框列表
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyValueController.Post(GISWaterSupplyAndSewageServer.Model.Equipments.EquipmentPorpertyValue)">
+            <summary>
+            新增设备属性下拉框配置
+            </summary>
+            <param name="value"></param>````````````````````````
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyValueController.Put(System.String,GISWaterSupplyAndSewageServer.Model.Equipments.EquipmentPorpertyValue)">
+            <summary>
+            修改设备属性下拉框配置
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Equipments.EquipmentPorpertyValueController.Delete(System.String)">
+            <summary>
+            删除设备属性下拉框配置
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.EssentialFactor.EssentialFactorController">
+            <summary>
+            要素管理
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.EssentialFactor.EssentialFactorController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取要素信息
+            </summary>
+            <param name="ParInfo">其他台账查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.EssentialFactor.EssentialFactorController.Post(GISWaterSupplyAndSewageServer.Model.EssentialFactor.GIS_EssentialFactor)">
+            <summary>
+            新增
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.EssentialFactor.EssentialFactorController.Put(System.String,GISWaterSupplyAndSewageServer.Model.EssentialFactor.GIS_EssentialFactor)">
+            <summary>
+            修改
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.EssentialFactor.EssentialFactorController.Delete(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.EssentialFactor.EssentialFactorController.GetTree(System.String,System.Int32)">
+            <summary>
+            获取要素树形结构
+            </summary>
+            <param name="pID">父编号</param>
+            <param name="eFType">要素类别 1：固定要素2：自定义要素</param>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_ConfigureController">
+            <summary>
+            GIS地图配置
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_ConfigureController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取GIS地图配置列表
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_ConfigureController.GetMapConfig">
+            <summary>
+            取得地图配置信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_ConfigureController.Post(GISWaterSupplyAndSewageServer.Model.GisConfigSetting.GIS_Configure)">
+            <summary>
+            新增地图配置
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_ConfigureController.Put(System.String,GISWaterSupplyAndSewageServer.Model.GisConfigSetting.GIS_Configure)">
+            <summary>
+            修改地图配置
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_ConfigureController.Delete(System.String)">
+            <summary>
+            删除地图配置
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_ConfigureController.DownloadFile(System.String,System.String)">
+            <summary>
+            下载地图整体配置
+            </summary>
+            <param name="fileFormat">文件格式，默认.txt</param>
+            <param name="fileName">下载文件名 默认地图整体配置列表</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_DataTableColumnController">
+            <summary>
+             GIS基础数据结构字段列表
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_DataTableColumnController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取GIS数据结构字段列表
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_DataTableColumnController.Post(GISWaterSupplyAndSewageServer.Model.GisConfigSetting.GIS_DataTableColumn)">
+            <summary>
+            新增数据结构字段
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_DataTableColumnController.Put(System.String,GISWaterSupplyAndSewageServer.Model.GisConfigSetting.GIS_DataTableColumn)">
+            <summary>
+            修改数据结构字段
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_DataTableColumnController.Delete(System.String)">
+            <summary>
+            删除数据结构字段
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_DataTableColumnController.DownloadFile(System.String,System.String)">
+            <summary>
+            下载文件
+            </summary>
+            <param name="fileFormat">文件格式，默认.txt</param>
+            <param name="fileName">下载文件名 默认GIS数据结构字段列表</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_DataTableController">
+            <summary>
+             GIS基础数据结构配置表
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_DataTableController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取要素主表信息
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_DataTableController.Post(GISWaterSupplyAndSewageServer.Model.GisConfigSetting.GIS_DataTable)">
+            <summary>
+            新增基础数据配置
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_DataTableController.Put(System.String,GISWaterSupplyAndSewageServer.Model.GisConfigSetting.GIS_DataTable)">
+            <summary>
+            修改基础数据配置
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_DataTableController.Delete(System.String)">
+            <summary>
+            删除基础数据配置
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_DataTableController.GetDataTable">
+            <summary>
+            取得地图配置信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_DataTableController.DownloadFile(System.String,System.String)">
+            <summary>
+            下载文件
+            </summary>
+            <param name="fileFormat">文件格式，默认.txt</param>
+            <param name="fileName">下载文件名 默认基础数据配置列表</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_FeatureLayerCollectionController">
+            <summary>
+            FeatureLayer图层管理类
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_FeatureLayerCollectionController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取FeatureLayer列表
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_FeatureLayerCollectionController.Post(GISWaterSupplyAndSewageServer.Model.GisConfigSetting.GIS_FeatureLayerCollection)">
+            <summary>
+            新增Featurelayer
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_FeatureLayerCollectionController.Put(System.String,GISWaterSupplyAndSewageServer.Model.GisConfigSetting.GIS_FeatureLayerCollection)">
+            <summary>
+            修改FeatureLayer
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_FeatureLayerCollectionController.Delete(System.String)">
+            <summary>
+            删除FeatureLayer
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_LayerTypeController">
+            <summary>
+            图层类别管理管理
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_LayerTypeController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取GIS图层类型列表
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_LayerTypeController.GetLayerType(System.String)">
+            <summary>
+            获取图层类型列表
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_LayerTypeController.Post(GISWaterSupplyAndSewageServer.Model.GisConfigSetting.GIS_LayerType)">
+            <summary>
+            新增图层类别
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_LayerTypeController.Put(System.String,GISWaterSupplyAndSewageServer.Model.GisConfigSetting.GIS_LayerType)">
+            <summary>
+            修改图层类别
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_LayerTypeController.Delete(System.String)">
+            <summary>
+            删除图层类别
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_PublicSearchController">
+            <summary>
+            搜素配置管理
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_PublicSearchController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取搜索配置
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_PublicSearchController.Post(GISWaterSupplyAndSewageServer.Model.GisConfigSetting.GIS_PublicSearch)">
+            <summary>
+            新增搜索配置
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_PublicSearchController.Put(System.String,GISWaterSupplyAndSewageServer.Model.GisConfigSetting.GIS_PublicSearch)">
+            <summary>
+            修改搜索配置
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.GisConfigSetting.GIS_PublicSearchController.Delete(System.String)">
+            <summary>
+            删除搜索数据
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Gis_AlarmSetting.AlarmSettingController">
+            <summary>
+            预警设置管理
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Gis_AlarmSetting.AlarmSettingController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取预警设置信息
+            </summary>
+            <param name="ParInfo">其他台账查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Gis_AlarmSetting.AlarmSettingController.Post(GISWaterSupplyAndSewageServer.Model.AlarmSetting.GIS_Alarm_Setting)">
+            <summary>
+            新增
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Gis_AlarmSetting.AlarmSettingController.Put(System.String,GISWaterSupplyAndSewageServer.Model.AlarmSetting.GIS_Alarm_Setting)">
+            <summary>
+            修改
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Gis_AlarmSetting.AlarmSettingController.Delete(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Gis_Spatialquery.GISSpatialSearchController">
+            <summary>
+            GIS分区空间查询接口
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Gis_Spatialquery.GISSpatialSearchController.GetFirstzoneShape(System.String)">
+            <summary>
+            获取一级分区空间信息
+            </summary>
+            <param name="parInfo">查询条件 [{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Gis_Spatialquery.GISSpatialSearchController.GetSeconozoneShape(System.String)">
+            <summary>
+            获取二级分区空间信息
+            </summary>
+            <param name="parInfo">查询条件 [{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Gis_Spatialquery.GISSpatialSearchController.GetUnitShape(System.String)">
+            <summary>
+            获取网格空间信息
+            </summary>
+            <param name="parInfo">查询条件 [{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_FileStoreController">
+            <summary>
+            文件上传
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_FileStoreController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取文件上传记录信息
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition|startTime|endTime",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_FileStoreController.Post(Microsoft.AspNetCore.Http.IFormCollection,System.String,System.String,System.String)">
+            <summary>
+            上传文件接口(包含上传文件）
+            </summary>
+            <param name="formData">上传文件</param>
+            <param name="uploaderId">上传人id</param>
+            <param name="uploaderName">上传人名</param>
+            <param name="describe">文件描述</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_logManagementController">
+            <summary>
+            日志管理(内外业)
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_logManagementController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取日志记录信息(OPERATIONTYPE 1.登陆2.菜单点击3.设备编辑4.管线编辑5.文件导入 6:内业系统派发)
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition|startTime|endTime",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_logManagementController.Post(System.Int32,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            新增日志记录
+            </summary>
+            <param name="operationType">操作类型1.登陆(operatorName登陆于operatorTime)2.菜单点击(operatorName点击newValue菜单于operatorTime)3.设备编辑(operatorName将operationField从oldValue改为newValue于operatorTime)4.管线编辑5.文件导入(operatorName将newValue导入于operatorTime)</param>
+            <param name="operatorId">操作人id</param>
+            <param name="operatorName">操作人姓名</param>
+            <param name="operationField">操作字段</param>
+            <param name="newValue">新值</param>
+            <param name="oldValue">旧值</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_TaskInfoAPPController">
+            <summary>
+            APP获取任务列表
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_TaskInfoAPPController.Get(System.String)">
+            <summary>
+            获取已派发任务详情json信息
+            </summary>
+            <param name="fID">文件id</param>
+            <returns></returns>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_TaskInfoAPPController.GetList(System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            任务列表App
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition|startTime|endTime",LinkType:and|or}]查询参数名称 上传人：uploaderid 派发人:dispatchpersonid 外业人：execpersonid 派发状态:ispost 任务名称:taskname  上传时间:uploadetime</param>
+            <param name="sort"></param>
+            <param name="describe">文件描述</param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_TaskInfoReportController">
+            <summary>
+            采集工单上报(内外业)
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_TaskInfoReportController.Post(System.String,System.String,System.String,System.String,System.Collections.Generic.List{GISWaterSupplyAndSewageServer.Model.Internalexternal.Ms_ExcelPointLine})">
+            <summary>
+            采集工单上报
+            </summary>
+            <param name="taskId">任务id</param>
+            <param name="taskName">任务名称</param>
+            <param name="operatorId">操作人id</param>
+            <param name="operatorName">操作人姓名</param>
+            <param name="value">工单数据</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_TaskManagementController">
+            <summary>
+            任务管理
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_TaskManagementController.Get(System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            任务查询
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition|startTime|endTime",LinkType:and|or}]查询参数名称 上传人：uploaderid 派发人:dispatchpersonid 外业人：execpersonid 派发状态:ispost 任务名称:taskname  上传时间:uploadetime</param>
+            <param name="sort"></param>
+            <param name="describe">文件描述</param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_TaskManagementController.Post(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            任务派发
+            </summary>
+            <param name="fid">文件id</param>
+            <param name="dispatchPersonId">分派人id</param>
+            <param name="dispatchPersonName">分派人姓名</param>
+            <param name="execPersonId">处理人id</param>
+            <param name="execPersonName">处理人姓名</param>
+            <param name="taskName">任务名称</param>
+            <param name="describe">任务描述</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_TaskManagementController.Put(System.String,GISWaterSupplyAndSewageServer.Model.Internalexternal.Ms_TaskManagement)">
+            <summary>
+            任务修改
+            </summary>
+            <param name="taskID">任务id</param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_WorkOrderController">
+            <summary>
+            采集工单内业系统对接(内外业)
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_WorkOrderController.Get">
+            <summary>
+            获取工单上报信息（包含具体设备信息）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Internalexternal.Ms_WorkOrderController.Put(System.String,System.String,System.String,System.String)">
+            <summary>
+            修改
+            </summary>
+            <param name="workorderid">工单id</param>
+            <param name="handlePersonID">编辑人员id</param>
+            <param name="handlePerson">编辑人员</param>
+            <param name="isPostcomplete">是否分派 0,1,2 0：未分派 1：已分派 2:已完成</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Accounts.AccountsValveCommonController">
+            <summary>
+            阀门普查工作情况相关接口
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Accounts.AccountsValveCommonController.Post(System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,Microsoft.AspNetCore.Http.IFormCollection)">
+            <summary>
+            保存阀门普查工作情况记录
+            </summary>
+            <param name="checkpersonid">检查人ID</param>
+            <param name="checkpersonname">检查人名称</param>
+            <param name="checktime">检查时间</param>
+            <param name="rangename">行政区域名称</param>
+            <param name="rangename_Fgs">分公司区域名称</param>
+            <param name="valveaddress">阀门地址</param>
+            <param name="valvecaliber">阀门口径</param>
+            <param name="valvecode">阀门编号</param>
+            <param name="valvedetail">阀门及阀门井情况</param>
+            <param name="valvelevel">级别</param>
+            <param name="valverunstate">阀门运行状态 0正常，1不正常</param>
+            <param name="valveswitchstate">阀门开关状态 0开 1关 2未知</param>
+            <param name="globid">globid</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Accounts.AccountsValveCommonController.GetList(System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            查询阀门普查工作情况记录
+            </summary>
+            <param name="ParInfo">参数信息</param>
+            <param name="sort">排序字段</param>
+            <param name="ordering">升序/降序</param>
+            <param name="num">当前页</param>
+            <param name="page">每页数据行数</param>
+            <param name="searchSql">拼接的查询语句</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Accounts.AccountsValveCommonController.Put(System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,Microsoft.AspNetCore.Http.IFormCollection)">
+            <summary>
+            修改阀门普查工作情况记录
+            </summary>
+            <param name="checkpersonid">检查人ID</param>
+            <param name="checkpersonname">检查人名称</param>
+            <param name="checktime">检查时间</param>
+            <param name="rangename">行政区域名称</param>
+            <param name="rangename_Fgs">分公司区域名称</param>
+            <param name="valveaddress">阀门地址</param>
+            <param name="valvecaliber">阀门口径</param>
+            <param name="valvecode">阀门编号</param>
+            <param name="valvedetail">阀门及阀门井情况</param>
+            <param name="valvelevel">级别</param>
+            <param name="valverunstate">阀门运行状态 0正常，1不正常</param>
+            <param name="valveswitchstate">阀门开关状态 0开 1关 2未知</param>
+            <param name="globid">globid</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Accounts.AccountsValveCommonController.Delete(System.String)">
+            <summary>
+            删除阀门普查工作情况记录
+            </summary>
+            <param name="ID">主键ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Accounts.AccountsValveCommonController.GetCountList(System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            获得阀门普查工作情况统计表
+            </summary>
+            <param name="ParInfo">参数信息</param>
+            <param name="sort">排序字段</param>
+            <param name="ordering">升序/降序</param>
+            <param name="num">当前页</param>
+            <param name="page">每页数据行数</param>
+            <param name="groupByFields">统计纬度字段</param>
+            <param name="searchSql">拼接的查询语句</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Accounts.AccountsValveMaintainController">
+            <summary>
+            阀门一般性维修记录相关接口
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Accounts.AccountsValveMaintainController.Post(System.Int32,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Microsoft.AspNetCore.Http.IFormCollection)">
+            <summary>
+            保存阀门一般性维修记录
+            </summary>
+            <param name="iscomplete">完成情况0未完成 1已完成</param>
+            <param name="maintaindetail">维修项目</param>
+            <param name="maintaintime">维修日期</param>
+            <param name="rangename">行政区域名称</param>
+            <param name="rangename_Fgs">分公司区域名称</param>
+            <param name="valveaddress">地址</param>
+            <param name="valvecaliber">口径</param>
+            <param name="valvecode">阀门编号</param>
+            <param name="valvetype">型号</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <param name="globid">globid</param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Accounts.AccountsValveMaintainController.GetList(System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            查询阀门一般性维修记录
+            </summary>
+            <param name="ParInfo">参数信息</param>
+            <param name="sort">排序字段</param>
+            <param name="ordering">升序/降序</param>
+            <param name="num">当前页</param>
+            <param name="page">每页数据行数</param>
+            <param name="searchSql">拼接的查询语句</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Accounts.AccountsValveMaintainController.Put(System.String,System.Int32,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Microsoft.AspNetCore.Http.IFormCollection)">
+            <summary>
+            修改阀门一般性维修记录
+            </summary>
+            <param name="id">主键ID</param>
+            <param name="iscomplete">完成情况0未完成 1已完成</param>
+            <param name="maintaindetail">维修项目</param>
+            <param name="maintaintime">维修日期</param>
+            <param name="rangename">行政区域名称</param>
+            <param name="rangename_Fgs">分公司区域名称</param>
+            <param name="valveaddress">地址</param>
+            <param name="valvecaliber">口径</param>
+            <param name="valvecode">阀门编号</param>
+            <param name="valvetype">型号</param>
+            <param name="globid">globid</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Accounts.AccountsValveMaintainController.Delete(System.String)">
+            <summary>
+            删除阀门一般性维修记录
+            </summary>
+            <param name="id">主键ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Accounts.AccountsValveMaintainController.GetCountList(System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            获得阀门一般性维修记录统计表
+            </summary>
+            <param name="ParInfo">参数信息</param>
+            <param name="sort">排序字段</param>
+            <param name="ordering">升序/降序</param>
+            <param name="num">当前页</param>
+            <param name="page">每页数据行数</param>
+            <param name="groupByFields">统计纬度字段</param>
+            <param name="searchSql">拼接的查询语句</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.AttendanceManage.InsAttendanceController">
+            <summary>
+            签到管理
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.AttendanceManage.InsAttendanceController.Post(System.String,System.String,System.String,System.String)">
+            <summary>
+            添加签到信息
+            </summary>
+            <param name="taskid">任务id</param>
+            <param name="taskName">任务名称</param>
+            <param name="groupID">分组id  1：签到 2：签退</param>
+            <param name="attendanceType">打卡类型: 签到 签退；</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.AttendanceManage.InsAttendanceController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取签到记录
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition|startTime|endTime",LinkType:and|or}]  查询参数 签到时间:upTime；人员id：Personid；部门id：DetpID</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.AttendanceManage.InsAttendanceController.GetLastAttendance">
+            <summary>
+            返回最后一条签到记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.AttendanceManage.InsPersonPositionController">
+            <summary>
+            任务轨迹相关(实时上报位置信息)
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.AttendanceManage.InsPersonPositionController.Post(System.String,System.String,System.String,System.String)">
+            <summary>
+            添加任务轨迹
+            </summary>
+            <param name="taskid">任务</param>
+            <param name="positionX">横坐标</param>
+            <param name="positionY">纵坐标</param>
+            <param name="groupID">分组id  1：签到 2：签退</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.AttendanceManage.InsPersonPositionController.GetPositionByPersonid">
+            <summary>
+            按照人员分组返回人员的最后一次上报位置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.AttendanceManage.InsTaskCoordinatsController">
+            <summary>
+            任务轨迹
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.AttendanceManage.InsTaskCoordinatsController.#ctor(GISWaterSupplyAndSewageServer.IDAL.PlanningEngine.AttendanceManage.IIns_TaskCoordinatsDAL)">
+            <summary>
+            
+            </summary>
+            <param name="ins_TaskCoordinatsDAL"></param>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.AttendanceManage.InsTaskCoordinatsController.Get(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            获取坐标信息
+            </summary>
+            <param name="startTime">开始时间 yyy-mm-dd</param>
+            <param name="endTime">结束时间 yyy-mm-dd</param>
+            <param name="taskId">任务Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.AttendanceManage.InsWorkingTimeDistanceController">
+            <summary>
+            获取我的当天工作时间和公里数
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.AttendanceManage.InsWorkingTimeDistanceController.WorkingTimeDistance">
+            <summary>
+            App获取我的当天工作时间和公里数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.ConfigurationManagement.InsMoveTerminalController">
+            <summary>
+            移动终端
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.ConfigurationManagement.InsMoveTerminalController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取移动终端列表
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.ConfigurationManagement.InsMoveTerminalController.Post(GISWaterSupplyAndSewageServer.Model.PlanningEngine.ConfigurationManagement.Ins_MoveTerminal)">
+            <summary>
+            新增移动终端
+            </summary>
+            <param name="value">Operating_system：操作系统；PurchaseDate：购买日期；EquipmentName：购买设备名称；EquipmentType：设备类型；DepartmentId：部门id；DepartmentName：部门名称；PersonID：人员id；Personname：人员名称；</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.ConfigurationManagement.InsMoveTerminalController.Put(System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.ConfigurationManagement.Ins_MoveTerminal)">
+            <summary>
+            修改移动终端
+            </summary>
+            <param name="ID">主键ID(MoveId)</param>
+            <param name="value">Operating_system：操作系统；PurchaseDate：购买日期；EquipmentName：购买设备名称；EquipmentType：设备类型；DepartmentId：部门id；DepartmentName：部门名称；PersonID：人员id；Personname：人员名称；</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.ConfigurationManagement.InsMoveTerminalController.Delete(System.String)">
+            <summary>
+            删除移动终端
+            </summary>
+            <param name="ID">主键ID(MoveId)</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.ConfigurationManagement.InsWorkTimeIntervalController">
+            <summary>
+            工作时段
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.ConfigurationManagement.InsWorkTimeIntervalController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取工作时段列表
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.ConfigurationManagement.InsWorkTimeIntervalController.Post(GISWaterSupplyAndSewageServer.Model.PlanningEngine.ConfigurationManagement.Ins_WorkTimeInterval)">
+            <summary>
+            新增工作时段
+            </summary>
+            <param name="value">Task_Name：任务名称；Start_Time：开始时间；End_Time：结束时间；Is_monitor：是否轨迹监控；remark：备注；</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.ConfigurationManagement.InsWorkTimeIntervalController.Put(System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.ConfigurationManagement.Ins_WorkTimeInterval)">
+            <summary>
+            修改工作时段
+            </summary>
+            <param name="ID">主键ID(WorkTimeID)</param>
+            <param name="value">Task_Name：任务名称；Start_Time：开始时间；End_Time：结束时间；Is_monitor：是否轨迹监控；remark：备注；</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.ConfigurationManagement.InsWorkTimeIntervalController.Delete(System.String)">
+            <summary>
+            删除工作时段
+            </summary>
+            <param name="ID">主键ID(WorkTimeID)</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.CustomCondition.TCustomConditionController">
+            <summary>
+            用户查询条件
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.CustomCondition.TCustomConditionController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取用户查询条件列表(Headers传递access_token)
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.CustomCondition.TCustomConditionController.Post(GISWaterSupplyAndSewageServer.OracleDAL.PlanningEngine.CustomCondition.T_Customconditions)">
+            <summary>
+            新增用户查询条件(Headers传递access_token)
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.CustomCondition.TCustomConditionController.Put(System.String,GISWaterSupplyAndSewageServer.OracleDAL.PlanningEngine.CustomCondition.T_Customconditions)">
+            <summary>
+            修改用户查询条件(Headers传递access_token)
+            </summary>
+            <param name="ID">主键ID(Plan_Cycle_Id)</param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.CustomCondition.TCustomConditionController.Delete(System.String)">
+            <summary>
+            删除用户查询条件
+            </summary>
+            <param name="ID">主键ID</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.EquipmentFormsRelation.InsCustomizeFormlistController">
+            <summary>
+            表单列表
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.EquipmentFormsRelation.InsCustomizeFormlistController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取表单列表
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]  查询参数 表单名称:tableName</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.EquipmentFormsRelation.InsEquipmentFormsController">
+            <summary>
+            关系挂接
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.EquipmentFormsRelation.InsEquipmentFormsController.Post(System.Collections.Generic.List{GISWaterSupplyAndSewageServer.Model.PlanningEngine.EquipmentFormsRelation.Ins_Equipment_Forms})">
+            <summary>
+            新增关系挂接
+            </summary>
+            <param name="value">GroupName：英文名称；ViewOrder：编号；tableID：表单对应表名称；</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.EquipmentFormsRelation.InsEquipmentFormsController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取关系挂接列表
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}] type：挂接类型 1：计划引擎 2.台账</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.EquipmentFormsRelation.InsEquipmentFormsController.GetCommboboxList">
+            <summary>
+            获取关系挂接设备名称下拉框
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.EquipmentFormsRelation.InsEquipmentFormsController.Delete(System.String)">
+            <summary>
+            删除设备挂接
+            </summary>
+            <param name="ID">主键ID(Equipment_form_id)</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Form.InsFormFireHydrantController">
+            <summary>
+            消防栓填单(APP)
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Form.InsFormFireHydrantController.Post(System.String,System.String,System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.Form.Ins_Form_FireHydrantModel,System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            消防栓填单 APP调用：(Headers传递app和token) 
+            </summary>
+            <param name="ID">plan_task_id</param>
+            <param name="x">上报位置横坐标</param>
+            <param name="y">上报位置纵坐标</param>
+            <param name="eventTypeId">事件类型id</param>
+            <param name="isReport"></param>
+            <param name="eventTypeId2">事件内容id</param>
+            <param name="eventDesc">事件备注</param>
+            <param name="rangName">网格区域名称</param>
+            <param name="execDetpID">分派人部门ID</param>
+            <param name="execDetpName">分派人部门名称</param>
+            <param name="execPersonId">分派人人ID</param>
+            <param name="execPersonName">分派人人名称</param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Form.InsFormLeakDetectionController">
+            <summary>
+            检漏填单(APP)
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Form.InsFormLeakDetectionController.Post(System.String,System.String,System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.Form.Ins_Form_LeakDetectionModel)" -->
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Form.InsFormPipelineequController">
+             <summary>
+            共用管道及附属设备填单
+             </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Form.InsFormPipelineequController.Post(System.String,System.String,System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.Form.Ins_Form_PipelineequModel,System.String)">
+            <summary>
+            添加蓄水设施
+            </summary>
+            <param name="ID">plan_task_id</param>
+            <param name="x">上报位置横坐标</param>
+            <param name="y">上报位置纵坐标</param>
+             <param name="imageUrl">已上傳的照片路徑</param>
+            <param name="value"></param> /// <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Form.InsFormPumpController">
+             <summary>
+            泵房填单
+             </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Form.InsFormPumpController.Post(System.String,System.String,System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.Form.Ins_Form_PumpModel,System.String)">
+            <summary>
+            添加蓄水设施
+            </summary>
+            <param name="ID">plan_task_id</param>
+            <param name="x">上报位置横坐标</param>
+            <param name="y">上报位置纵坐标</param>
+             <param name="imageUrl">已上傳的照片路徑</param>
+            <param name="value"></param> /// <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Form.InsFormStorewaterController">
+             <summary>
+            蓄水设施填单
+             </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Form.InsFormStorewaterController.Post(System.String,System.String,System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.Form.Ins_Form_StoreWaterModel,System.String)">
+            <summary>
+            添加蓄水设施
+            </summary>
+            <param name="ID">plan_task_id</param>
+            <param name="x">上报位置横坐标</param>
+            <param name="y">上报位置纵坐标</param>
+             <param name="imageUrl">已上傳的照片路徑</param>
+            <param name="value"></param> /// <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Form.InsFormValveController">
+            <summary>
+            阀门填单(APP)
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Form.InsFormValveController.Post(System.String,System.String,System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.Form.Ins_Form_ValveModel,System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" -->
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Form.InsGetFormInfoController">
+            <summary>
+            获取填单数据
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Form.InsGetFormInfoController.Get(System.String,System.String)">
+            <summary>
+             根据tableid和plan_task_id获取填单数据
+            </summary>
+            <param name="plan_task_id">任务明细id</param>
+            <param name="tableId">表单表名</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.InspectionSettings.InsGetUserInfoController">
+            <summary>
+            获取当前用户信息
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.InspectionSettings.InsGetUserInfoController.Get(System.String)">
+            <summary>
+            获取当前用户信息 APP调用：(Headers传递app和token) PC端调用：(Headers传递access_token)
+            </summary>
+            <param name="systemType">1:PC   2:APP</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.InspectionSettings.Statistics.InspectionStaticsController">
+            <summary>
+            巡查总览
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.InspectionSettings.Statistics.InspectionStaticsController.Get(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String)">
+            <summary>
+             获取巡查总览数据(当前登陆人员) APP调用：(Headers传递app和token) 
+            </summary>
+            <param name="startTime">开始时间 yyy-mm-dd</param>
+            <param name="endTime">结束时间 yyy-mm-dd</param>
+            <param name="task_Type_id">任务类型 id  传参格式 '1','2','3'</param>
+            <param name="isFinish">任务状态 0：未完成(执行中) 1：已完成 2：未开始 3:已超时 空代表全部</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.InspectionSettings.Statistics.InspectionStaticsController.GetInspectionOverview(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String)">
+            <summary>
+             获取巡检总览分析数据
+            </summary>
+            <param name="startTime">开始时间 yyy-mm-dd</param>
+            <param name="endTime">结束时间 yyy-mm-dd</param>
+            <param name="rangName">网格区域名称 </param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.InspectionSettings.Statistics.InsTaskStatisticsController">
+            <summary>
+            任务统计--包含Echart图数据
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.InspectionSettings.Statistics.InsTaskStatisticsController.GetTaskStateEchart(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+             获取任务状态Echart数据
+            </summary>
+            <param name="startTime">开始时间 yyy-mm-dd</param>
+            <param name="endTime">结束时间 yyy-mm-dd</param>
+            <param name="rangids">区域ids </param>
+            <param name="task_Type_id">任务类型id </param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.InspectionSettings.Statistics.InsTaskStatisticsController.GetTaskTypeEchart(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+             获取任务分类Echart数据
+            </summary>
+            <param name="startTime">开始时间 yyy-mm-dd</param>
+            <param name="endTime">结束时间 yyy-mm-dd</param>
+            <param name="rangids">区域ids </param>
+            <param name="task_Type_id">任务类型id </param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.InspectionSettings.Statistics.InsTaskStatisticsController.GetTaskExecuteRate(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Collections.Generic.List{System.String})">
+            <summary>
+             获取任务执行率分析
+            </summary>
+            <param name="startTime">开始时间 yyy-mm-dd</param>
+            <param name="endTime">结束时间 yyy-mm-dd</param>
+            <param name="rangids">区域ids </param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.InspectionSettings.Statistics.InsTaskStatisticsController.GetTaskStatistics(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Collections.Generic.List{System.String})">
+            <summary>
+             获取巡检任务统计分析
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]查询参数：ProraterDeptId：部门id；ProraterId：巡检员id；Plan_cycle_id：巡检周期id</param>
+            <param name="startTime">开始时间 yyy-mm-dd</param>
+            <param name="endTime">结束时间 yyy-mm-dd</param>
+            <param name="rangids">区域ids </param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.InspectionSettings.Statistics.InsTaskStatisticsController.GetInspectorWorkloadStatistics(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Collections.Generic.List{System.String})">
+            <summary>
+             获取巡检人员工作量分析
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]查询参数：ProraterDeptId：部门id；ProraterId：巡检员id；</param>
+            <param name="startTime">开始时间 yyy-mm-dd</param>
+            <param name="endTime">结束时间 yyy-mm-dd</param>
+            <param name="rangids">区域ids </param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PermissionManage.PermissionForMapController">
+            <summary>
+            图层及区域权限相关
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PermissionManage.PermissionForMapController.GetOrganizationList(System.String)">
+            <summary>
+            组织机构查询接口
+            </summary>
+            <param name="Access_Token">返回结果中_id:组织机构ID,level:组织机构类型,name:组织机构名称,pid:父级组织机构ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PermissionManage.PermissionForMapController.GetDepartmentList(System.String)">
+            <summary>
+            部门查询接口
+            </summary>
+            <param name="Access_Token">返回结果中id:部门ID,NAME:部门名称,PARENTID:父级部门ID,TREECHILDREN:子级部门列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PermissionManage.PermissionForMapController.GetUserList(System.String)">
+            <summary>
+            用户查询接口
+            </summary>
+            <param name="Access_Token">  返回结果中_id:用户ID,name:用户名称,group:指数组织机构ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PermissionManage.PermissionForMapController.GetPipeInfoList">
+            <summary>
+            获取图层接口 返回结果中ID:图层ID,PARENTID:父级图层ID,NAME:图层名称,TREECHILDREN:子级图层列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PermissionManage.PermissionForMapController.GetAreaInfoList">
+            <summary>
+            获取区域接口 返回结果中ID:区域编码,PARENTID:父级区域编码,NAME:区域名称,TREECHILDREN:子级区域列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PermissionManage.PermissionForMapController.SaveAreaPermission(GISWaterSupplyAndSewageServer.Model.PlanningEngine.Permission.Dto.SaveAreaPermissionDto)">
+            <summary>
+            保存组织架构的区域权限
+            </summary>
+            <param name="Model">Access_Token,OrganizationId:组织机构ID,OrganizationType:组织机构类型(集团,公司,部门),OCode:区域编码数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PermissionManage.PermissionForMapController.SavePipePermissionForDepartment(GISWaterSupplyAndSewageServer.Model.PlanningEngine.Permission.Dto.SavePipePermissionForDepartmentDto)">
+            <summary>
+            保存部门图层权限
+            </summary>
+            <param name="Model">DepartmentId:部门ID,LayerInfoList:图层列表[{LayerName:图层名称, IsReadonly:是否只读}]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PermissionManage.PermissionForMapController.SavePipePermissionForUser(GISWaterSupplyAndSewageServer.Model.PlanningEngine.Permission.Dto.SavePipePermissionForUserDto)">
+            <summary>
+            保存用户图层权限
+            </summary>
+            <param name="Model">UserId:用户ID,DepartmentId:部门ID,LayerInfoList:图层列表[{LayerName:图层名称, IsReadonly:是否只读}]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PermissionManage.PermissionForMapController.GetAreaPermissionInfo(System.String)">
+            <summary>
+            获取机构区域权限信息
+            </summary>
+            <param name="OrganizationId">组织机构ID 返回结果中OrganizationId:组织机构ID,OrganizationType:组织机构类型,OCode:区域编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PermissionManage.PermissionForMapController.GetPipePermissionInfoForDepartment(System.String)">
+            <summary>
+            获取部门图层权限信息
+            </summary>
+            <param name="DepartmentId">部门ID 返回结果中DepartmentId:部门id,LayerName:图层Name,IsReadonly:是否只读(0 否 1 是)</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PermissionManage.PermissionForMapController.GetPipePermissionInfoForUser(System.String)">
+            <summary>
+            获取用户图层权限信息
+            </summary>
+            <param name="UserId">用户ID 返回结果中UserId:用户ID,LayerName:图层Name,DepartmentId:部门ID,IsReadonly:是否只读(0 否 1 是)</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PermissionManage.PermissionForMapController.GetUserPipeAndLayerPermissionInfo(System.String)">
+            <summary>
+            获取用户所拥有的区域及图层权限信息
+            </summary>
+            <param name="UserId">用户ID 返回结果中UserId:用户ID,AreaList:区域权限列表{OrganizationId:组织机构ID,OrganizationType:组织机构类型,OCode:区域编码},LayerList:图层权限列表{UserId:用户ID,LayerName:图层Name,DepartmentId:部门ID,IsReadonly:是否只读(0 否 1 是)}</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PlanManage.InsPlanController">
+            <summary>
+            计划管理
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PlanManage.InsPlanController.Get(System.String,System.Collections.Generic.List{System.String},System.String,System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            获取计划管理列表
+            </summary>
+            <param name="planttemplate_id"></param>
+             <param name="rangids">区域ids 用逗号分隔['1','2']</param>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PlanManage.InsPlanController.Post(GISWaterSupplyAndSewageServer.Model.PlanningEngine.PlanManage.Ins_Plan)">
+            <summary>
+            新增计划管理(Headers传递access_token)
+            </summary>
+            <param name="value">Plan_Name：计划名称；PlanCycleId：计划周期主键Id；IsNormalPlan：是否常规 0:常规 1:临时；IsFeedBack：是否反馈 0:需反馈 1:仅到位；
+            Plan_Type_Id：巡检计划类型主键Id；Range_Name:巡检区域名称 网格区域时默认最后一个名称；Geometry：区域坐标信息；MoveType：巡检方式1：车巡，2：徒步；
+            Plan_TemplateType_Id：计划模板大类id；PlanTtemplate_Id：计划模板id；
+            Assign_State：分派状态 0：未分派 1 分派中 2分派失败 3分派成功；Range_Id：巡检区域id(包含网格id或区域id)；Ins_Plan_EquipmentList：设备类型列表[{ 
+            LayerName：设备设施 ；tableID：自定义表单id；Ins_Plan_Equipment_InfoList：设备信息列表[{
+            Equipment_Info_Code：设施编号eid；Equipment_Info_Name：设施名称；Address：地址；Caliber：口径；Lon：经度；Lat：纬度；EquType：类型 1：设备 2：管线;GlobID:设施id }]}]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PlanManage.InsPlanController.Put(System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.PlanManage.Ins_Plan)">
+            <summary>
+            修改计划管理
+            </summary>
+            <param name="ID">计划管理主键ID(Plan_Id)</param>
+            <param name="value">Plan_Name：计划名称；PlanCycleId：计划周期主键Id；IsNormalPlan：是否常规 0:常规 1:临时；IsFeedBack：是否反馈 0:需反馈 1:仅到位；
+            Plan_Type_Id：巡检计划类型主键Id；Range_Name:巡检区域名称 网格区域时默认最后一个名称；Geometry：区域坐标信息；MoveType：巡检方式1：车巡，2：徒步；
+            Plan_TemplateType_Id：计划模板大类id；PlanTtemplate_Id：计划模板id；Create_Person_Id：新建人ID；Create_Person_Name：新建人姓名；Create_Time：新建时间；
+            Assign_State：分派状态 0：未分派 1 分派中 2分派失败 3分派成功；Range_Id：巡检区域id(包含网格id或区域id)；Ins_Plan_EquipmentList：设备类型列表[{ 
+            LayerName：设备设施 ；tableID：自定义表单id；Ins_Plan_Equipment_InfoList：设备信息列表[{
+            Equipment_Info_Code：设施编号；Equipment_Info_Name：设施名称；Address：地址；Caliber：口径；Lon：经度；Lat：纬度；LayerName：设备设施 }]}]</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PlanManage.InsPlanController.Delete(System.String)">
+            <summary>
+            删除计划管理
+            </summary>
+            <param name="ID">计划管理主键ID(Plan_Id)</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.PlanManage.InsPlanController.DistributedPlan(GISWaterSupplyAndSewageServer.Model.BPM.DistributedPlanBPM)">
+            <summary>
+            计划管理派发
+            </summary>
+            <param name="model">Plan_Id：计划ID；Plan_Name：计划名称；TaskName：任务名称；task_Type_Id:任务类型id；DepartmentId：部门ID；
+            DepartmentName：部门名称；ExecPersonId:分派人员Id；ExecPersonName：分派人员名称；StartDate：开始时间；
+            EndDate：结束时间；TaskDescription：任务描述；creator_nm：创建人姓名；creator_id：创建人id；creator_gid：创建人公司ID；
+            creator_gnm：创建人公司名称；category：类别；definitionId：定义ID</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsGisFeatureLayerListController">
+            <summary>
+            设备类型下拉框
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsGisFeatureLayerListController.Get">
+            <summary>
+            获取所有设备类型-下拉框
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPlanEquipmentFormController">
+            <summary>
+            计划模板设备关联bpm管理
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPlanEquipmentFormController.Post(GISWaterSupplyAndSewageServer.Model.PlanningEngine.Plan.Ins_Plan_EquipmentForm)">
+            <summary>
+            新增设备关联bpm
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPlanEquipmentFormController.Delete(System.String)">
+            <summary>
+            删除设备关联bpm
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPlantemplateController">
+            <summary>
+            计划模板管理
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPlantemplateController.GetList(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取计划模板（包含设备信息与自定义表单）
+            </summary>
+            <param name="ParInfo">其他台账查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPlantemplateController.Post(GISWaterSupplyAndSewageServer.Model.PlanningEngine.Plan.Ins_Plantemplate)">
+            <summary>
+            新增计划模板(Headers传递access_token)
+            </summary>
+            <param name="value">Plan_templatetype_id：模板分类 PlantTemplate_name：模板名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPlantemplateController.Put(System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.Plan.Ins_Plantemplate)">
+            <summary>
+            修改计划模板
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPlantemplateController.Delete(System.String)">
+            <summary>
+            删除计划模板
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPlanTemplateTypeController">
+            <summary>
+            计划模板大类
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPlanTemplateTypeController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取计划模板大类数据
+            </summary>
+            <param name="ParInfo">其他台账查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]查询参数名称Type 1:polygon 2:string</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPlanTemplateTypeController.GetTree(System.String)">
+            <summary>
+            获取模板大类树形目录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPlanTemplateTypeController.Post(GISWaterSupplyAndSewageServer.Model.PlanningEngine.Plan.Ins_Plan_Templatetype)">
+            <summary>
+            新增模板大类
+            </summary>
+            <param name="value">Templatetype_code：模板编号 Templatetype_name：模板分类名称  Templatetype_parentid：父节点id 值为00000000-0000-0000-0000-000000000000代表根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPlanTemplateTypeController.Put(System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.Plan.Ins_Plan_Templatetype)">
+            <summary>
+            修改模板大类
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPlanTemplateTypeController.Delete(System.String)">
+            <summary>
+            删除模板大类
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPositionController">
+            <summary>
+            任务轨迹相关
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPositionController.GetInspectorRoute(System.String,System.DateTime)">
+            <summary>
+            根据任务id获取轨迹,有数据返回就行 路线现在不叠加(播放按钮)
+            </summary>
+            <param name="taskid">根据任务id获取轨迹</param>
+             <param name="getTime">轨迹时间 参数格式yyyy-MM-dd</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsPositionController.GetRouteByTaskId(System.String)">
+            <summary>
+            根据任务id获取巡检轨迹
+            </summary>
+            <param name="taskid">任务id</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsRangeController">
+            <summary>
+            巡检范围管理
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsRangeController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取巡检范围
+            </summary>
+            <param name="ParInfo">其他台账查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]查询参数名称Type 1:polygon 2:string ； 区域名称:Range_name;责任部门：Department_name， DeptId 责任人 Person_name， PersonId</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsRangeController.GetTree(System.String)">
+            <summary>
+            获取巡检范围树形目录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsRangeController.Post(GISWaterSupplyAndSewageServer.Model.PlanningEngine.Plan.Ins_Range)">
+            <summary>
+            新增巡检范围
+            </summary>
+            <param name="value">Range_parentid：值为00000000-0000-0000-0000-000000000000代表根节点 type：1:polygon 2:string  shape:范围gis信息 department_name:责任部门 person_name：区域负责人</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsRangeController.Put(System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.Plan.Ins_Range)">
+            <summary>
+            修改巡检范围
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsRangeController.Delete(System.String)">
+            <summary>
+            删除巡检范围
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsRangePointController">
+            <summary>
+            巡检范围关键点
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsRangePointController.Get(System.String)">
+            <summary>
+            根据巡检范围获取关键点信息
+            </summary>
+            <param name="range_id">巡检范围id</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsRangePointController.Post(GISWaterSupplyAndSewageServer.Model.PlanningEngine.Plan.Ins_Range_Point)">
+            <summary>
+            新增关键点
+            </summary>
+            <param name="value">Range_id:巡检范围主键  Range_point_name:关键点名称  Lon：经度  Lat：纬度</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsRangePointController.Put(System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.Plan.Ins_Range_Point)">
+            <summary>
+            修改关键点
+            </summary>
+            <param name="ID"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.Plan.InsRangePointController.Delete(System.String)">
+            <summary>
+            删除关键点
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsCancelTaskNewsController.CancelNews(System.String,System.String,System.String)">
+            <summary>
+            手动关闭推送消息
+            </summary>
+            <param name="taskId">任务id </param>
+            <param name="proraterId">人员id</param>
+            <param name="taskName">任务名称 </param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskManageAppController">
+            <summary>
+            任务列表(APP)
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskManageAppController.Get(System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获得任务信息列表 APP调用：(Headers传递app和token)
+            </summary>
+            <param name="taskName">任务名稱</param>
+            <param name="taskid">任务id</param>
+            <param name="isFinish">任务状态 0：未完成(执行中) 1：已完成 2：未开始 3:已超时 空代表全部</param>
+            <param name="task_Type_id">任务类型 id  传参格式 '1','2','3'</param>
+            <param name="startTime">yyyy-MM-dd</param>
+            <param name="endTime">yyyy-MM-dd</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskManageAppController.GetWorkCode(System.String)">
+            <summary>
+            获取表单中工单编号
+            </summary>
+            <param name="tableId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskManageController">
+            <summary>
+            任务列表
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskManageController.Get(System.String,System.Collections.Generic.List{System.String},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获得任务信息列表
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]查询参数：TaskName：任务名称；task_type_id：任务类型id； proraterdeptid：部门id； proraterid：人员id  range_id： 任务区域id ； assignstate：任务状态； IsFinish：完成状态</param>
+            <param name="rangids">区域ids </param>
+            <param name="task_Type_ids">任务类型 id  </param>
+            <param name="taskState">任务状态  1：已派发 2：未派发  3：已完成 4:已作废  5 处理中（已分派未完成）</param>
+            <param name="startTime">开始时间 yyyy-mm-dd</param>
+            <param name="endTime">结束时间 yyyy-mm-dd</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskManageController.GetEquipmentInfo(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            根据任务id获取设备详情
+            </summary>
+            <param name="taskid">任务id</param>
+            <param name="IsFillForm">是否填单 0：否 1：是</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <param name="X">当前横坐标</param>
+            <param name="Y">当前纵坐标</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskManageController.AssignTask(System.Collections.Generic.List{System.String})">
+            <summary>
+            分派任务
+            </summary>
+            <param name="taskIds">任务ids</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskManageController.ReAssignTask(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            转派任务
+            </summary>
+            <param name="taskIds">任务id </param>
+            <param name="proraterDeptName">部门名称</param>
+            <param name="proraterDeptId">部门Id</param>
+            <param name="proraterName">分派人员</param>
+            <param name="proraterId">分派人员Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskManageController.Delete(System.String)">
+            <summary>
+            删除任务
+            </summary>
+            <param name="taskId">任务id</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskManageController.Cancel(System.Collections.Generic.List{System.String})">
+            <summary>
+            作废任务
+            </summary>
+            <param name="taskId">任务id</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskMonitorController">
+            <summary>
+            巡检监控
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskMonitorController.Get(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.Collections.Generic.List{System.String},System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获得任务信息列表
+            </summary>
+            <param name="startTime">开始时间 yyy-mm-dd</param>
+            <param name="endTime">结束时间 yyy-mm-dd</param>
+            <param name="rangids">区域ids </param>
+            <param name="proraterDeptId">部门id</param>
+            <param name="proraterId">用户id </param>
+            <param name="task_Type_id">任务类型id </param>
+            <param name="sort">默认操作时间 OPERATEDATE</param>
+            <param name="ordering">默认 desc</param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskTypeController">
+            <summary>
+            任务分类
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskTypeController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取分类数据
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]查询参数名称Task_type_id 分类id</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskTypeController.GetTree(System.String)">
+            <summary>
+            获取任务分类树形目录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskTypeController.Post(GISWaterSupplyAndSewageServer.Model.PlanningEngine.TaskManage.Ins_Task_Type)">
+            <summary>
+            新增任务分类
+            </summary>
+            <param name="value">Task_type_code：编号 Task_type_name：名称  ParentTypeId：父节点id 值为00000000-0000-0000-0000-000000000000代表根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskTypeController.Put(System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.TaskManage.Ins_Task_Type)">
+            <summary>
+            修改任务分类
+            </summary>
+            <param name="ID">Task_type_id 分类id</param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.PlanningEngine.TaskManage.InsTaskTypeController.Delete(System.String)">
+            <summary>
+            删除任务分类
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CustomCondition.CustomConditionController">
+            <summary>
+            用户自定义查询条件
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CustomCondition.CustomConditionController.#ctor(GISWaterSupplyAndSewageServer.Model.PlanningEngine.CustomCondition.IIns_CustomconditionsDAL)">
+            <summary>
+            
+            </summary>
+            <param name="ins_CustomconditionsDAL"></param>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CustomCondition.CustomConditionController.SaveCustomconditions(GISWaterSupplyAndSewageServer.Model.PlanningEngine.CustomCondition.Ins_Customconditions)">
+            <summary>
+            保存自定义查询条件(Headers传递access_token)
+            </summary>
+            <param name="Model">userid,createtime,id不传</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CustomCondition.CustomConditionController.GetCustomconditionsModel(System.String)">
+            <summary>
+            查询自定义查询条件(Headers传递access_token)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CustomCondition.CustomConditionController.Put(System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.CustomCondition.Ins_Customconditions)">
+            <summary>
+            修改自定义查询条件(Headers传递access_token)
+            </summary>
+            <param name="ID">主键ID(Id)</param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.CustomCondition.CustomConditionController.Delete(System.String)">
+            <summary>
+            删除用户查询条件
+            </summary>
+            <param name="ID">主键ID</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Plan.InsPlanCycleController">
+            <summary>
+            计划周期
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Plan.InsPlanCycleController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取计划周期列表
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Plan.InsPlanCycleController.Post(GISWaterSupplyAndSewageServer.Model.Plan.Ins_Plan_Cycle)">
+            <summary>
+            新增计划周期
+            </summary>
+            <param name="value">Plan_Cycle_Name：计划周期名称；CycleTime：周期时长，如1；CycleUnit：单位：天，周，月；CycleHz：频率；DeleteState：是否删除：0未删除，1删除</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Plan.InsPlanCycleController.Put(System.String,GISWaterSupplyAndSewageServer.Model.Plan.Ins_Plan_Cycle)">
+            <summary>
+            修改计划周期
+            </summary>
+            <param name="ID">主键ID(Plan_Cycle_Id)</param>
+            <param name="value">Plan_Cycle_Name：计划周期名称；CycleTime：周期时长，如1；CycleUnit：单位：天，周，月；CycleHz：频率；DeleteState：是否删除：0未删除，1删除</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Plan.InsPlanCycleController.Delete(System.String)">
+            <summary>
+            删除计划周期
+            </summary>
+            <param name="ID">主键ID(Plan_Cycle_Id)</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Plan.InsPlanTypeController">
+            <summary>
+            巡检类型管理
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Plan.InsPlanTypeController.Get(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取巡检类型列表
+            </summary>
+            <param name="ParInfo">查询列表[{ParName:"字段名",ParValue:"字段值",DataType:"数据类型：string|number|bool|condition",LinkType:and|or}]</param>
+            <param name="sort"></param>
+            <param name="ordering"></param>
+            <param name="num"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Plan.InsPlanTypeController.Post(GISWaterSupplyAndSewageServer.Model.Plan.Ins_Plan_Type)">
+            <summary>
+            新增巡检类型
+            </summary>
+            <param name="value">Plan_Type_Name：类型名称 ParentTypeId：父节点id ； 根节点：0；Operater：操作人姓名 </param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Plan.InsPlanTypeController.Put(System.String,GISWaterSupplyAndSewageServer.Model.Plan.Ins_Plan_Type)">
+            <summary>
+            修改巡检类型
+            </summary>
+            <param name="ID">主键ID(Plan_Type_Id)</param>
+            <param name="value">Plan_Type_Name：类型名称 ParentTypeId：父节点id 根节点：0；Operater：操作人姓名</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Plan.InsPlanTypeController.Delete(System.String)">
+            <summary>
+            删除巡检类型
+            </summary>
+            <param name="ID">主键ID(Plan_Type_Id)</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Plan.InsPlanTypeController.GetTreeList">
+            <summary>
+            获取巡检类型及其区域信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Statistics.DataQualityController">
+            <summary>
+            数据质量统计
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Statistics.DataQualityController.Get(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            数据质量统计
+            </summary>
+            <param name="sTime">开始时间</param>
+            <param name="eTime">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Statistics.FacilityCountController">
+            <summary>
+            资产统计
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Statistics.FacilityCountController.#ctor(GISWaterSupplyAndSewageServer.IDAL.Statistics.IGIS_DataQualifyDAL)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="gIS_DataQualifyDAL"></param>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.ApiControllers.Statistics.FacilityCountController.Get(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            资产统计
+            </summary>
+            <param name="sTime">开始时间</param>
+            <param name="eTime">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.PipeController">
+            <summary>
+            管网类查询
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.PipeController.#ctor(GISWaterSupplyAndSewageServer.IDAL.IPipeDAL)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="pipeDAL"></param>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.PipeController.GetLayers">
+            <summary>
+            获取管网图层
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.PipeController.GetMaterial_science">
+            <summary>
+            获取材质
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.PipeController.GetCaliber">
+            <summary>
+            获取口径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.PipeController.GetInstallation_address">
+            <summary>
+            获取地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.PipeController.GetPipeAndPointByPage(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取管网信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.PipeController.GetPipeAndPointStatistic(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String[])">
+            <summary>
+            获取管网统计
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.PipeController.Get(System.String,System.String)">
+            <summary>
+            获取管网信息通过坐标(EPSG:4547)
+            </summary>
+            <param name="latitude">纬度</param>
+            <param name="longitude">精度</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Controllers.SpatialSearchController">
+            <summary>
+            GIS空间查讯接口
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.SpatialSearchController.#ctor(GISWaterSupplyAndSewageServer.IDAL.IPipeDAL,GISWaterSupplyAndSewageServer.IDAL.Gis_Spatialquery.ISpatialSearchDAL,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="pipeDAL"></param>
+            <param name="spatialSearchDAL"></param>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.SpatialSearchController.GetRealatedValveAndPipeByPipeId(System.String)">
+            <summary>
+            根据管网id活得所有关联阀门和管网
+            </summary>
+            <param name="pipeId">管网id (','号分割)</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.SpatialSearchController.GetCurveHeng(System.Object)">
+            <summary>
+            获取横断面PNG
+            </summary>
+            <param name="value">能够转化为DataTable的Json</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.SpatialSearchController.GetUserInfo(System.Double,System.Double)">
+            <summary>
+            根据4326坐标查询附近小区/楼宇/用户
+            </summary>
+            <param name="lng"></param>
+            <param name="lat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.SpatialSearchController.GetUserInfoByPolylines(System.Collections.Generic.List{System.Collections.Generic.List{System.Double[]}})">
+            <summary>
+            根据4326polylines查询附近小区/楼宇/用户
+            </summary>
+            <param name="multilinestring"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.SpatialSearchController.GetUserInfoByPoints(System.Collections.Generic.List{System.Double[]})">
+            <summary>
+            根据4326Points查询附近小区/楼宇/用户
+            </summary>
+            <param name="multilpoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.SpatialSearchController.PaginationSearch(GISWaterSupplyAndSewageServer.IDAL.Gis_Spatialquery.SpatialSearchPaginationForm,System.String,System.Int32,System.Int32)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="keyWords">>' '分割</param>
+            <param name="offset">>=0</param>
+            <param name="record">>0</param>
+            <param name="data">参数集合{EquipmentCount:设备数量,Polygon:区域,ClassNames:要查询的设备列表,Grids:分区id}</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.SpatialSearchController.EquipmentList">
+            <summary>
+            分页查询所支持layer和字段
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:GISWaterSupplyAndSewageServer.Controllers.BaseController.UniWaterUserInfo">
+            <summary>
+            UniWater用户信息
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Controllers.BaseController.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsFireHydrantDailyController">
+             <summary>
+            消火栓日常巡查记录表接口
+             </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsFireHydrantDailyController.Post(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,Microsoft.AspNetCore.Http.IFormCollection)">
+            <summary>
+            添加消火栓日常巡查记录表
+            </summary>
+            <param name="firehydrantaddress">所在道路</param>
+            <param name="firehydrantcode">设备编号</param>
+            <param name="firehydrantvender">厂家</param>
+            <param name="iscomplete">是否完好 0否1是</param>
+            <param name="isdirty">是否污损 0否1是</param>
+            <param name="isfillbrand">是否补订牌 0否1是</param>
+            <param name="isfixedbrand">是否未钉牌 0否1是</param>
+            <param name="isheight">是否过高 0否1是</param>
+            <param name="islackconnect">是否缺连接扣 0否1是</param>
+            <param name="isleakwater">是否漏水 0否1是</param>
+            <param name="ismisscover">是否缺盖 0否1是</param>
+            <param name="isold">是否陈旧 0否1是</param>
+            <param name="isshort">是否过矮 0否1是</param>
+            <param name="istilt">是否倾斜 0否1是</param>
+            <param name="isunlocation">是否位置不合理 0否1是</param>
+            <param name="otherqueation">其他问题</param>
+            <param name="outwatertime">出水时间</param>
+            <param name="pressure">压力</param>
+            <param name="rangename">行政区域名称</param>
+            <param name="globid">globid</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <param name="rangename_Fgs">分公司区域名称</param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsFireHydrantDailyController.Put(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,Microsoft.AspNetCore.Http.IFormCollection)">
+            <summary>
+            修改消火栓日常巡查记录表
+            </summary>
+            <param name="id">主键ID</param>
+            <param name="firehydrantaddress">所在道路</param>
+            <param name="firehydrantcode">设备编号</param>
+            <param name="firehydrantvender">厂家</param>
+            <param name="iscomplete">是否完好 0否1是</param>
+            <param name="isdirty">是否污损 0否1是</param>
+            <param name="isfillbrand">是否补订牌 0否1是</param>
+            <param name="isfixedbrand">是否未钉牌 0否1是</param>
+            <param name="isheight">是否过高 0否1是</param>
+            <param name="islackconnect">是否缺连接扣 0否1是</param>
+            <param name="isleakwater">是否漏水 0否1是</param>
+            <param name="ismisscover">是否缺盖 0否1是</param>
+            <param name="isold">是否陈旧 0否1是</param>
+            <param name="isshort">是否过矮 0否1是</param>
+            <param name="istilt">是否倾斜 0否1是</param>
+            <param name="isunlocation">是否位置不合理 0否1是</param>
+            <param name="otherqueation">其他问题</param>
+            <param name="outwatertime">出水时间</param>
+            <param name="pressure">压力</param>
+            <param name="rangename">行政区域名称</param>
+            <param name="rangename_Fgs">分公司区域名称</param>
+            <param name="globid">globid</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsFireHydrantDailyController.Delete(System.String)">
+            <summary>
+            删除消火栓日常巡查记录表
+            </summary>
+            <param name="id">主键ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsFireHydrantDailyController.GetList(System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获得消火栓日常巡查记录表列表
+            </summary>
+            <param name="ParInfo">参数信息</param>
+            <param name="sort">排序字段</param>
+            <param name="ordering">升序/降序</param>
+            <param name="num">当前页</param>
+            <param name="page">每页数据行数</param>
+            <param name="searchSql">拼接的查询语句</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsFireHydrantDailyController.GetCountList(System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            获得消火栓日常巡查记录统计表
+            </summary>
+            <param name="ParInfo">参数信息</param>
+            <param name="sort">排序字段</param>
+            <param name="ordering">升序/降序</param>
+            <param name="num">当前页</param>
+            <param name="page">每页数据行数</param>
+            <param name="searchSql">拼接的查询语句</param>
+            <param name="groupByFields">统计纬度字段</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsPipeInspectionDailyController">
+             <summary>
+            高风险管段巡查记录表接口
+             </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsPipeInspectionDailyController.Post(System.String,System.String,System.DateTime,System.String,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,Microsoft.AspNetCore.Http.IFormCollection)">
+            <summary>
+            添加高风险管段巡查记录表
+            </summary>
+            <param name="detailaddress">发现问题详细地址</param>
+            <param name="globid">管线编号</param>
+            <param name="inspectiondate">巡查时间</param>
+            <param name="inspector">巡查人</param>
+            <param name="isexplose">是否暴漏0:否 1：是</param>
+            <param name="isrectification">是否当场整改0:否 1：是</param>
+            <param name="isridingpressure">是否骑压 0:否 1：是;</param>
+            <param name="rangename">行政区域名称</param>
+            <param name="routename">路线名称</param>
+            <param name="workcode">工单编号</param>
+            <param name="Pipecode">管线编号</param>
+            <param name="rangename_Fgs">分公司区域名称</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsPipeInspectionDailyController.Put(System.String,System.String,System.String,System.DateTime,System.String,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,Microsoft.AspNetCore.Http.IFormCollection)">
+            <summary>
+            修改高风险管段巡查记录表
+            </summary>
+            <param name="id">主键ID</param>
+            <param name="detailaddress">发现问题详细地址</param>
+            <param name="globid">管线编号</param>
+            <param name="inspectiondate">巡查时间</param>
+            <param name="inspector">巡查人</param>
+            <param name="isexplose">是否暴漏0:否 1：是</param>
+            <param name="isrectification">是否当场整改0:否 1：是</param>
+            <param name="isridingpressure">是否骑压 0:否 1：是;</param>
+            <param name="rangename">行政区域名称</param>
+            <param name="routename">路线名称</param>
+            <param name="workcode">工单编号</param>
+            <param name="Pipecode">管线编号</param>
+            <param name="rangename_Fgs">分公司区域名称</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsPipeInspectionDailyController.Delete(System.String)">
+            <summary>
+            删除高风险管段巡查记录表
+            </summary>
+            <param name="id">主键ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsPipeInspectionDailyController.GetList(System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获得高风险管段巡查记录表列表
+            </summary>
+            <param name="ParInfo">参数信息</param>
+            <param name="sort">排序字段</param>
+            <param name="ordering">升序/降序</param>
+            <param name="num">当前页</param>
+            <param name="page">每页数据行数</param>
+            <param name="searchSql">拼接的查询语句</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsPipeInspectionDailyController.GetCountList(System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            获得高风险管段巡查记录统计表
+            </summary>
+            <param name="ParInfo">参数信息</param>
+            <param name="sort">排序字段</param>
+            <param name="ordering">升序/降序</param>
+            <param name="num">当前页</param>
+            <param name="page">每页数据行数</param>
+            <param name="searchSql">拼接的查询语句</param>
+            <param name="groupByFields">统计纬度字段</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsPipeScrapDailyController">
+             <summary>
+            管线拆除、报废登记表接口
+             </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsPipeScrapDailyController.Post(GISWaterSupplyAndSewageServer.Model.PlanningEngine.Accounts_Pipescrapdaily)">
+            <summary>
+            添加管线拆除、报废登记表
+            </summary>
+            <param name="model">Auditleader:审核部领导;Auditleaderqzdate:审核部领导签字时间;Auditreviewer:审核部审核人;Auditreviewerqzdate:审核部审核人签字时间;Companymanager:公司经理;Companymanagerqzdate:公司经理签字时间;Constructioncompany:施工单位;Fillingcompany:填表单位;Fillingdate:填表日期;Financeagent:财务部经办人;Financeagentqzdate:财务部经办人签字时间;Financeleader:财务部领导;Financeleaderqzdate:财务部领导签字时间;Globid:管线编号;Id:主键;Installplace:安装地点;Mi_Shape:WTK格式;Originalvalue:原值(元);Pipechief:原管总长;Pipecode:管线编号;Primary_Completeddate:原竣工日期;Primary_Projectcode:原工程档号;Primary_Projectreference:原工程档号;Projectcode:工程编号;Projectname:工程名称;Rangename:区域名称;Rangename_Fgs:分公司区域名称;Reason:原因;Scrapcaliber:报废口径;Scrapdismantle:废管或拆除;Scrapnum:报废数量;Scrapyj:报废意见;Scrapyz:报废原值;Scrapzj:报废折旧;Shape:N;Sycompanyjbr:使用单位经办人;Sycompanyld:使用单位领导;Sycompanyqzdate:使用单位领导签字时间;Sycompanyyj:使用单位意见;Systemtime:系统时间;Unitprice:单元(元/m);Zyinstallgg:主要安装规格;</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsPipeScrapDailyController.Put(System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.Accounts_Pipescrapdaily)">
+             <summary>
+            修改管线拆除、报废登记表
+             </summary>
+             <param name="ID">主键ID(Id)</param>
+             <param name="value">Auditleader:审核部领导;Auditleaderqzdate:审核部领导签字时间;Auditreviewer:审核部审核人;Auditreviewerqzdate:审核部审核人签字时间;Companymanager:公司经理;Companymanagerqzdate:公司经理签字时间;Constructioncompany:施工单位;Fillingcompany:填表单位;Fillingdate:填表日期;Financeagent:财务部经办人;Financeagentqzdate:财务部经办人签字时间;Financeleader:财务部领导;Financeleaderqzdate:财务部领导签字时间;Globid:管线编号;Id:主键;Installplace:安装地点;Mi_Shape:WTK格式;Originalvalue:原值(元);Pipechief:原管总长;Pipecode:管线编号;Primary_Completeddate:原竣工日期;Primary_Projectcode:原工程档号;Primary_Projectreference:原工程档号;Projectcode:工程编号;Projectname:工程名称;Rangename:区域名称;Rangename_Fgs:分公司区域名称;Reason:原因;Scrapcaliber:报废口径;Scrapdismantle:废管或拆除;Scrapnum:报废数量;Scrapyj:报废意见;Scrapyz:报废原值;Scrapzj:报废折旧;Shape:N;Sycompanyjbr:使用单位经办人;Sycompanyld:使用单位领导;Sycompanyqzdate:使用单位领导签字时间;Sycompanyyj:使用单位意见;Systemtime:系统时间;Unitprice:单元(元/m);Zyinstallgg:主要安装规格;</param>
+             <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsPipeScrapDailyController.Delete(System.String)">
+            <summary>
+            删除管线拆除、报废登记表
+            </summary>
+            <param name="id">主键ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsPipeScrapDailyController.GetList(System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获得管线拆除、报废登记表列表
+            </summary>
+            <param name="ParInfo">参数信息</param>
+            <param name="sort">排序字段</param>
+            <param name="ordering">升序/降序</param>
+            <param name="num">当前页</param>
+            <param name="page">每页数据行数</param>
+            <param name="searchSql">拼接的查询语句</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsPipeScrapDailyController.GetCountList(System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            获得管线拆除、报废登记统计表
+            </summary>
+            <param name="ParInfo">参数信息</param>
+            <param name="sort">排序字段</param>
+            <param name="ordering">升序/降序</param>
+            <param name="num">当前页</param>
+            <param name="page">每页数据行数</param>
+            <param name="groupByFields">统计纬度字段</param>
+            <param name="searchSql">拼接的查询语句</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsValveDailyController">
+             <summary>
+            阀门日常巡查记录表接口
+             </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsValveDailyController.Post(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,Microsoft.AspNetCore.Http.IFormCollection)">
+            <summary>
+            添加阀门日常巡查记录表
+            </summary>
+            <param name="otherquestion">其他问题</param>
+            <param name="rangename">行政区域名称</param>
+            <param name="rangename_Fgs">分公司区域名称</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <param name="valveaddress">所在道路</param>
+            <param name="valveboxdetail">传动箱情况</param>
+            <param name="valvecaliber">口径</param>
+            <param name="valvecode">阀门编号</param>
+            <param name="valvedetail">信息登记与现场情况</param>
+            <param name="valveiscomplete">是否完好 0否 1是</param>
+            <param name="valveisleakage">是否漏水 0否1是</param>
+            <param name="valveisstandard">阀门井盖高低不平 0否 1是</param>
+            <param name="valveswitchstate">全开/全关 0全开1全关</param>
+            <param name="valvetype">阀门类型</param>
+            <param name="globid">globid</param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsValveDailyController.Put(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,Microsoft.AspNetCore.Http.IFormCollection)">
+            <summary>
+            修改阀门日常巡查记录表
+            </summary>
+            <param name="id">主键ID</param>
+            <param name="otherquestion">其他问题</param>
+            <param name="rangename">行政区域名称</param>
+            <param name="rangename_Fgs">分公司区域名称</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <param name="valveaddress">所在道路</param>
+            <param name="valveboxdetail">传动箱情况</param>
+            <param name="valvecaliber">口径</param>
+            <param name="valvecode">阀门编号</param>
+            <param name="valvedetail">信息登记与现场情况</param>
+            <param name="valveiscomplete">是否完好 0否 1是</param>
+            <param name="valveisleakage">是否漏水 0否1是</param>
+            <param name="valveisstandard">阀门井盖高低不平 0否 1是</param>
+            <param name="valveswitchstate">全开/全关 0全开1全关</param>
+            <param name="valvetype">阀门类型</param>
+            <param name="globid">globid</param>
+            <param name="formData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsValveDailyController.Delete(System.String)">
+            <summary>
+            删除阀门日常巡查记录表
+            </summary>
+            <param name="ID">主键ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsValveDailyController.GetList(System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获得阀门日常巡查记录表列表
+            </summary>
+            <param name="ParInfo">参数信息</param>
+            <param name="sort">排序字段</param>
+            <param name="ordering">升序/降序</param>
+            <param name="num">当前页</param>
+            <param name="page">每页数据行数</param>
+            <param name="searchSql">拼接的查询语句</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.AccountsValveDailyController.GetCountList(System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            获得阀门日常巡查记录统计表
+            </summary>
+            <param name="ParInfo">参数信息</param>
+            <param name="sort">排序字段</param>
+            <param name="ordering">升序/降序</param>
+            <param name="num">当前页</param>
+            <param name="page">每页数据行数</param>
+            <param name="groupByFields">统计纬度字段</param>
+            <param name="searchSql">拼接的查询语句</param>
+            <param name="mi_Shape">shape信息 WKT格式</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseBusinessController">
+             <summary>
+            企业业务信息
+             </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseBusinessController.Post(GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.Ins_Enterprisebusiness)">
+            <summary>
+            添加企业业务信息
+            </summary>
+            <param name="model">Address:地址;Checkcode:考评编号;Checkcontent:考评内容;Checkdate:考评日期;Checkscore:考评分数;Checkunit:考核单位;Enterpriseid:企业ID;Id:主键ID;Monitoringunit:监管单位;Projectname:工程名称;</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseBusinessController.Put(System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.Ins_Enterprisebusiness)">
+             <summary>
+            修改企业业务信息
+             </summary>
+             <param name="ID">主键ID(Id)</param>
+             <param name="value">Address:地址;Checkcode:考评编号;Checkcontent:考评内容;Checkdate:考评日期;Checkscore:考评分数;Checkunit:考核单位;Enterpriseid:企业ID;Id:主键ID;Monitoringunit:监管单位;Projectname:工程名称;</param>
+             <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseBusinessController.Delete(System.String)">
+            <summary>
+            删除企业业务信息
+            </summary>
+            <param name="ID">主键ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseBusinessController.GetList(System.String,System.String,System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            获得企业业务信息列表
+            </summary>
+            <param name="ParInfo">参数信息</param>
+            <param name="sort">排序字段</param>
+            <param name="ordering">升序/降序</param>
+            <param name="num">当前页</param>
+            <param name="page">每页数据行数</param>
+            <param name="SearchConditions">模糊查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseInfoController">
+             <summary>
+            企业信息
+             </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseInfoController.Post(GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.Ins_Enterpriseinfo)">
+            <summary>
+            添加企业信息
+            </summary>
+            <param name="model">Address:单位地址;Behalfperson:法定代表人;Enterprisecode:企业编码;Enterpriselevel:企业资质;Enterprisename:企业名称;Enterprisetype:单位性质;Fax:传真;Id:主键ID;Mishape:地理位置信息(WKT);Tel:电话;</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseInfoController.Put(System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.Ins_Enterpriseinfo)">
+             <summary>
+            修改企业信息
+             </summary>
+             <param name="ID">主键ID(Id)</param>
+             <param name="value">Address:单位地址;Behalfperson:法定代表人;Enterprisecode:企业编码;Enterpriselevel:企业资质;Enterprisename:企业名称;Enterprisetype:单位性质;Fax:传真;Id:主键ID;Mishape:地理位置信息(WKT);Tel:电话;</param>
+             <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseInfoController.Delete(System.String)">
+            <summary>
+            删除企业信息
+            </summary>
+            <param name="ID">主键ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseInfoController.GetList(System.String,System.String,System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            获得企业信息列表
+            </summary>
+            <param name="ParInfo">参数信息</param>
+            <param name="sort">排序字段</param>
+            <param name="ordering">升序/降序</param>
+            <param name="num">当前页</param>
+            <param name="page">每页数据行数</param>
+            <param name="SearchConditions">模糊查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseInfoController.GetEnterpriseType">
+            <summary>
+            获取企业性质下拉框数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseInfoController.GetEnterpriseLevle">
+            <summary>
+            获取企业资质下拉框数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseInfoController.GetStatisticalData(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            查询统计数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseInfoController.GetInfo(System.String)">
+            <summary>
+            根据ID获取企业信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseTenderController">
+             <summary>
+            企业投标信息
+             </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseTenderController.Post(GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.Ins_Enterprisetender)">
+            <summary>
+            添加企业投标信息
+            </summary>
+            <param name="model">Enterpriseid:企业ID;Id:主键ID;Istender:是否中标;Monitoringunit:监管单位;Projectname:工程名称;Tendercode:投标编号;Tenderdate:投标日期;Tendertiem:投标期限;Tenderway:招标方式;Totalamount:合同价款(万元);</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseTenderController.Put(System.String,GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.Ins_Enterprisetender)">
+             <summary>
+            修改企业投标信息
+             </summary>
+             <param name="ID">主键ID(Id)</param>
+             <param name="value">Enterpriseid:企业ID;Id:主键ID;Istender:是否中标;Monitoringunit:监管单位;Projectname:工程名称;Tendercode:投标编号;Tenderdate:投标日期;Tendertiem:投标期限;Tenderway:招标方式;Totalamount:合同价款(万元);</param>
+             <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseTenderController.Delete(System.String)">
+            <summary>
+            删除企业投标信息
+            </summary>
+            <param name="ID">主键ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseTenderController.GetList(System.String,System.String,System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            获得企业投标信息列表
+            </summary>
+            <param name="ParInfo">参数信息</param>
+            <param name="sort">排序字段</param>
+            <param name="ordering">升序/降序</param>
+            <param name="num">当前页</param>
+            <param name="page">每页数据行数</param>
+            <param name="SearchConditions">模糊查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Model.PlanningEngine.Enterprise.InsEnterpriseTenderController.GetTenderMethod">
+            <summary>
+            获取招标方式下拉框数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.MvcOptionsExtensions.UseCentralRoutePrefix(Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider)">
+            <summary>
+            扩展方法
+            </summary>
+            <param name="opts"></param>
+            <param name="routeAttribute"></param>
+        </member>
+        <member name="T:GISWaterSupplyAndSewageServer.RouteConvention">
+            <summary>
+            全局路由前缀配置
+            </summary>
+        </member>
+        <member name="F:GISWaterSupplyAndSewageServer.RouteConvention._centralPrefix">
+            <summary>
+            定义一个路由前缀变量
+            </summary>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.RouteConvention.#ctor(Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider)">
+            <summary>
+            调用时传入指定的路由前缀
+            </summary>
+            <param name="routeTemplateProvider"></param>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.RouteConvention.Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.ApplicationModel)">
+            <summary>
+            接口的Apply方法
+            </summary>
+            <param name="application"></param>
+        </member>
+        <member name="M:GISWaterSupplyAndSewageServer.Startup.GetClassName(System.String)">
+            <summary>  
+            获取程序集中的实现类对应的多个接口
+            </summary>  
+            <param name="assemblyName">程序集</param>
+        </member>
+    </members>
+</doc>
