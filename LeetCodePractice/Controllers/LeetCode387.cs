@@ -11,6 +11,7 @@ namespace LeetCodePractice.Controllers
     /// </summary>
     public class LeetCode387 : Controller
     {
+        [HttpGet]
         public int FirstUniqChar(string s)
         {
             Dictionary<char, int> Dic = new Dictionary<char, int>();
