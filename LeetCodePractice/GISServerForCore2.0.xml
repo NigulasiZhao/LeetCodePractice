@@ -52,6 +52,18 @@
             <param name="x"></param>
             <returns></returns>
         </member>
+        <member name="T:LeetCodePractice.Controllers.LeetCode9">
+            <summary>
+            判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
+            </summary>
+        </member>
+        <member name="M:LeetCodePractice.Controllers.LeetCode9.isPalindrome(System.Int32)">
+            <summary>
+            判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
         <member name="M:LeetCodePractice.MvcOptionsExtensions.UseCentralRoutePrefix(Microsoft.AspNetCore.Mvc.MvcOptions,Microsoft.AspNetCore.Mvc.Routing.IRouteTemplateProvider)">
             <summary>
             扩展方法
