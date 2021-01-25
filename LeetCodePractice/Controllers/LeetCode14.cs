@@ -16,6 +16,7 @@ namespace LeetCodePractice.Controllers
         /// </summary>
         /// <param name="strs"></param>
         /// <returns></returns>
+        [HttpGet]
         public string LongestCommonPrefix(string[] strs)
         {
             if (strs.Length == 0 || strs == null)
@@ -33,7 +34,7 @@ namespace LeetCodePractice.Controllers
             }
             return StrFlag;
         }
-
+        [HttpGet]
         public string OperateStr(string str1, string str2)
         {
             int length = Math.Min(str1.Length, str2.Length);
